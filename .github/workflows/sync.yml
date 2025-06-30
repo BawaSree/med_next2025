@@ -1,34 +1,16 @@
-name: Sync from Source Repo
-
+name: Sync from Account A
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs hourly (customize as needed)
-  workflow_dispatch:     # Allows manual triggering
+    - cron: '0 * * * *'  # Hourly sync
+  workflow_dispatch:     # Manual trigger
 
 jobs:
-  mirror:
+  sync:
     runs-on: ubuntu-latest
-    
     steps:
-      # Step 1: Checkout current repo
-      - name: Checkout Target Repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Fetches all history
-
-      # Step 2: Add source repo as remote
-      - name: Add Source Remote
-        run: |
+      - uses: actions/checkout@v4
+      - run: |
           git remote add source https://github.com/BawadharaniSree/MedNext2025.git
           git fetch source
-          
-      # Step 3: Merge changes (handles diverged histories)
-      - name: Merge Changes
-        run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git merge source/main --allow-unrelated-histories --strategy-option theirs
-          
-      # Step 4: Push to target repo
-      - name: Push to Target
-        run: git push origin main
+          git merge source/main --allow-unrelated-histories
+          git push origin main
