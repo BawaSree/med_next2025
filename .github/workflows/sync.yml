@@ -29,6 +29,6 @@ jobs:
       - name: Sync Changes
         run: |
           git checkout main
-          git merge source/main --allow-unrelated-histories --no-edit
+          git merge -X theirs source/main --allow-unrelated-histories --no-edit
           git push origin main
           git push --tags origin  # Push tags
