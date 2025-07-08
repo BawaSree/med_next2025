@@ -172,7 +172,7 @@ const content = {
           designation:
             "Chief Coordinator,Mental Health care & De-Addiction Programme",
           organization: "Chennai De-Addiction Centre",
-          image: "/placeholder.svg?height=200&width=200",
+          image: "/Dr.Mohan Narasimhan.jpg?height=200&width=200",
         },
         {
           name: "Dr. N. Ramakrishnan",
@@ -410,7 +410,7 @@ const content = {
           designation:
             "தலைமை ஒருங்கிணைப்பாளர், மனநல சேவை மற்றும் மதப்பிரிவினை நீக்கும் திட்டம்",
           organization: "சென்னை டி-அடிக்ஷன் சென்டர்",
-          image: "/placeholder.svg?height=200&width=200",
+          image: "/Dr.Mohan Narasimhan.jpg?height=200&width=200",
         },
         {
           name: "முனைவர் என். ராமகிருஷ்ணன்",
@@ -520,53 +520,58 @@ export default function MedNextConference() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-//   const scrollToSection = (id: string) => {
-//     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-//     setMobileMenuOpen(false);
-//   };
+  //   const scrollToSection = (id: string) => {
+  //     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  //     setMobileMenuOpen(false);
+  //   };
 
-// Replace your current scrollToSection function with this:
-const scrollToSection = (id: string) => {
-  setMobileMenuOpen(false);
-  
-  setTimeout(() => {
-    const element = document.getElementById(id);
-    if (element) {
-      // Calculate position accounting for header height (80px in this case)
-      const headerHeight = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+  // Replace your current scrollToSection function with this:
+  const scrollToSection = (id: string) => {
+    setMobileMenuOpen(false);
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
-  }, 100);
-};
+    setTimeout(() => {
+      const element = document.getElementById(id);
+      if (element) {
+        // Calculate position accounting for header height (80px in this case)
+        const headerHeight = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerHeight;
 
-// Update your mobile menu buttons to use this:
-{mobileMenuOpen && (
-  <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
-    <div className="py-4 space-y-2">
-      {Object.entries(t.nav).map(([key, value]) => (
-        <button
-          key={key}
-          onClick={() => {
-            // Close menu immediately
-            setMobileMenuOpen(false);
-            // Scroll after slight delay
-            setTimeout(() => scrollToSection(key === "home" ? "hero" : key), 100);
-          }}
-          className="block w-full text-left px-4 py-2 text-white hover:bg-blue-600 transition-colors"
-        >
-          {value}
-        </button>
-      ))}
-    </div>
-  </div>
-)}
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }, 100);
+  };
 
+  // Update your mobile menu buttons to use this:
+  {
+    mobileMenuOpen && (
+      <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
+        <div className="py-4 space-y-2">
+          {Object.entries(t.nav).map(([key, value]) => (
+            <button
+              key={key}
+              onClick={() => {
+                // Close menu immediately
+                setMobileMenuOpen(false);
+                // Scroll after slight delay
+                setTimeout(
+                  () => scrollToSection(key === "home" ? "hero" : key),
+                  100
+                );
+              }}
+              className="block w-full text-left px-4 py-2 text-white hover:bg-blue-600 transition-colors"
+            >
+              {value}
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "en" ? "ta" : "en"));
