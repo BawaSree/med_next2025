@@ -36,8 +36,8 @@ const content = {
         //  "The English version should be a direct translation of the Tamil paper",
         //  "Both versions must follow the same formatting guidelines",
         //  "Submit through our online portal (link will be provided)"
-        "The authors need to present their paper in Tamil",
-        "The paper need to submitted in both Tamil and English version",
+        "Authors need to present their paper in Tamil.",
+        "The paper must be submitted in both Tamil and English versions.",
       ],
       formatting: {
         title: "Formatting Guidelines",
@@ -65,7 +65,7 @@ const content = {
       dates: "9 & 10 October 2025",
       cta: "Register Now",
       scrolling:
-        "No Registration Fee • Limited to 50 Participants • AICTE Sponsored Conference",
+        "No Registration Fee • Limited to 50 Participants • AICTE Sponsored Bilingual Conference under VAANI Scheme",
     },
     about: {
       title: "About Conference",
@@ -75,7 +75,7 @@ const content = {
           "The AICTE has launched the VAANI scheme with a vision to bridge the linguistic divide in technical education by promoting the use of Indian languages alongside English. This initiative seeks to make quality technical education more inclusive, accessible, and relatable to students across diverse linguistic backgrounds, thereby fostering a deeper understanding and engagement in core Engineering concepts. In alignment with this transformative vision, the Department of Electronics and Communication Engineering, Sri Venkateswara College of Engineering, is proud to organize a Two-Day Bilingual Conference on Healthcare and MedTech, to be conducted in Tamil and English. This pioneering initiative aims to foster a culture of knowledge democratization, technological innovation, and regional inclusivity.The conference will serve as a dynamic platform for academicians, researchers, industry professionals, and students to engage in meaningful dialogues, share research insights, and showcase innovations in the field of Healthcare and Medical Technologies. It will spotlight the pivotal contributions of Electronics, Signal Processing, Internet of Things (IoT), Artificial Intelligence (AI), and Embedded Systems in revolutionizing healthcare delivery, diagnostics, patient monitoring, and personalized medicine. This initiative also resonates with the National Education Policy (NEP) 2020, which emphasizes the use of regional languages in higher education to improve learning outcomes.",
       },
       institute: {
-        title: "About SVCE Department",
+        title: "About SVCE ",
         content:
           'Sri Venkateswara College of Engineering (SVCE) (a unit of the Sri Venkateswara Educational and Health Trust) is one of Tamil Nadu\'s premier technical institutions. The college spans a sprawling 95-acre lush green campus and has architecturally designed buildings and state-of-the-art infrastructure. The National Assessment and Accreditation Council (NAAC) accredited the institution with an A+ grade. All eligible programmes are also accredited by the National Board of Accreditation (NBA), reflecting SVCE’s dedication to quality education and global standards. SVCE envisions becoming a "Centre of Excellence" by providing top-notch engineering education and fostering innovation, research, and holistic development. The institution is committed to nurturing ethical values, leadership qualities, and lifelong learning while addressing societal and industrial challenges. By integrating state-of-the-art teaching methodologies, industry collaboration, and real-world problem-solving approaches, SVCE aims to produce responsible, skilled engineers who contribute effectively to societal and national progress. SVCE is home to 11 research centers that foster innovation, interdisciplinary collaboration, and advanced problem-solving. These centers focus on cutting-edge areas such as Artificial Intelligence, Robotics, Renewable Energy, Biotechnology, Cybersecurity, and more.',
       },
@@ -233,7 +233,7 @@ const content = {
         chiefpatron: "Dr. A.C. Muthiah, Chairman, SVCE",
         patron: "Dr.M.Sivanandham, Secretary,  SVCE",
         copatron: "Dr.S.Ganesh Vaidyanathan, Principal, SVCE",
-        chairperson: "Dr. N. Kumaratharan, Professor and Head, ECE Department",
+        chairperson: "Dr. N. Kumaratharan, Professor and Head, Department of Electronics and Communication Engineering, SVCE",
         conveners: [
           "Dr.D.Menaka, Associate Professor , Department of Electronics and Communication Engineering, SVCE",
           "Ms. L. Anju, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
@@ -1137,7 +1137,7 @@ export default function MedNextConference() {
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 mr-3" />
-                  <span>+91 9790992194, 9942842979</span>
+                  <span>+91 97907 92194, 99428 42979</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 mr-3" />
