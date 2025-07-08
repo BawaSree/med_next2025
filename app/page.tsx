@@ -28,27 +28,27 @@ import Image from "next/image";
 // Language content
 const content = {
   en: {
-   paperSubmission: {
-  title: "Paper Submission Guidelines",
-  instructions: [
-   //  "Authors must present their paper in Tamil at the conference",
-   //  "Papers must be submitted in both Tamil and English versions",
-   //  "The English version should be a direct translation of the Tamil paper",
-   //  "Both versions must follow the same formatting guidelines",
-   //  "Submit through our online portal (link will be provided)"
-   "The authors need to present their paper in Tamil",
-   "The paper need to submitted in both Tamil and English version"
-  ],
-  formatting: {
-    title: "Formatting Guidelines",
-    items: [
-      "Maximum 6 pages including references",
-      "A4 size paper with 1-inch margins",
-      "12pt font size, Times New Roman",
-      "PDF format only"
-    ]
-  }
-},
+    paperSubmission: {
+      title: "Paper Submission Guidelines",
+      instructions: [
+        //  "Authors must present their paper in Tamil at the conference",
+        //  "Papers must be submitted in both Tamil and English versions",
+        //  "The English version should be a direct translation of the Tamil paper",
+        //  "Both versions must follow the same formatting guidelines",
+        //  "Submit through our online portal (link will be provided)"
+        "The authors need to present their paper in Tamil",
+        "The paper need to submitted in both Tamil and English version",
+      ],
+      formatting: {
+        title: "Formatting Guidelines",
+        items: [
+          "Maximum 6 pages including references",
+          "A4 size paper with 1-inch margins",
+          "12pt font size, Times New Roman",
+          "PDF format only",
+        ],
+      },
+    },
     nav: {
       home: "Home",
       about: "About",
@@ -60,7 +60,8 @@ const content = {
     },
     hero: {
       title: "MedNext 2025:",
-      subtitle: "Shaping the future of Healthcare with AI, Imaging, Devices & Diagnostics",
+      subtitle:
+        "Shaping the future of Healthcare with AI, Imaging, Devices & Diagnostics",
       dates: "9 & 10 October 2025",
       cta: "Register Now",
       scrolling:
@@ -76,7 +77,7 @@ const content = {
       institute: {
         title: "About SVCE Department",
         content:
-          "Sri Venkateswara College of Engineering (SVCE) (a unit of the Sri Venkateswara Educational and Health Trust) is one of Tamil Nadu's premier technical institutions. The college spans a sprawling 95-acre lush green campus and has architecturally designed buildings and state-of-the-art infrastructure. The National Assessment and Accreditation Council (NAAC) accredited the institution with an A+ grade. All eligible programmes are also accredited by the National Board of Accreditation (NBA), reflecting SVCE’s dedication to quality education and global standards. SVCE envisions becoming a \"Centre of Excellence\" by providing top-notch engineering education and fostering innovation, research, and holistic development. The institution is committed to nurturing ethical values, leadership qualities, and lifelong learning while addressing societal and industrial challenges. By integrating state-of-the-art teaching methodologies, industry collaboration, and real-world problem-solving approaches, SVCE aims to produce responsible, skilled engineers who contribute effectively to societal and national progress. SVCE is home to 11 research centers that foster innovation, interdisciplinary collaboration, and advanced problem-solving. These centers focus on cutting-edge areas such as Artificial Intelligence, Robotics, Renewable Energy, Biotechnology, Cybersecurity, and more.",
+          'Sri Venkateswara College of Engineering (SVCE) (a unit of the Sri Venkateswara Educational and Health Trust) is one of Tamil Nadu\'s premier technical institutions. The college spans a sprawling 95-acre lush green campus and has architecturally designed buildings and state-of-the-art infrastructure. The National Assessment and Accreditation Council (NAAC) accredited the institution with an A+ grade. All eligible programmes are also accredited by the National Board of Accreditation (NBA), reflecting SVCE’s dedication to quality education and global standards. SVCE envisions becoming a "Centre of Excellence" by providing top-notch engineering education and fostering innovation, research, and holistic development. The institution is committed to nurturing ethical values, leadership qualities, and lifelong learning while addressing societal and industrial challenges. By integrating state-of-the-art teaching methodologies, industry collaboration, and real-world problem-solving approaches, SVCE aims to produce responsible, skilled engineers who contribute effectively to societal and national progress. SVCE is home to 11 research centers that foster innovation, interdisciplinary collaboration, and advanced problem-solving. These centers focus on cutting-edge areas such as Artificial Intelligence, Robotics, Renewable Energy, Biotechnology, Cybersecurity, and more.',
       },
       department: {
         title: "About ECE Department",
@@ -91,64 +92,57 @@ const content = {
       items: [
         {
           title: "Track 1: Robotics, Automation, and Surgical AI ",
-          description:
-                  [
+          description: [
             "• Robotics & Automation in Surgery",
-            "• Rehabilitation Engineering & Assistive Technologies"
-         ].join('\n')
+            "• Rehabilitation Engineering & Assistive Technologies",
+          ].join("\n"),
         },
         {
           title: "Track 2: Medical Imaging and Diagnostics",
-          description:
-            [
-              "• Medical Imaging & Signal Processing",
-              "• AI in Disease Diagnosis",
-              "• Big Data Analytics for Public Health",
-              "• Chatbots & AI Assistants in Patient Care",
-              "• Image-guided therapy",
-              "• Real-time data processing in diagnostics",
-              "• Multimodal Imaging Fusion"
-            ].join('\n')
+          description: [
+            "• Medical Imaging & Signal Processing",
+            "• AI in Disease Diagnosis",
+            "• Big Data Analytics for Public Health",
+            "• Chatbots & AI Assistants in Patient Care",
+            "• Image-guided therapy",
+            "• Real-time data processing in diagnostics",
+            "• Multimodal Imaging Fusion",
+          ].join("\n"),
         },
         {
           title: "Track 3: Wearables, IoT, and Remote Healthcare",
-          description:
-            [
-              "• Wearable Health Devices & Remote Monitoring",
-              "• Smart Hospitals & IoT-Based Healthcare Systems",
-              "• Remote patient management and chronic disease monitoring"
-            ].join('\n')
+          description: [
+            "• Wearable Health Devices & Remote Monitoring",
+            "• Smart Hospitals & IoT-Based Healthcare Systems",
+            "• Remote patient management and chronic disease monitoring",
+          ].join("\n"),
         },
         {
           title: "Track 4: 3D Printing and Regenerative Medicine",
-          description:
-            [
-              "• 3D Printing in Medicine (Prosthetics, Implants)",
-              "• Customized prosthetics and implants"
-            ].join('\n')
+          description: [
+            "• 3D Printing in Medicine (Prosthetics, Implants)",
+            "• Customized prosthetics and implants",
+          ].join("\n"),
         },
         {
           title: "Track 5: Bioelectronics, Smart Biomaterials, andNeural Tech",
-          description:
-            [
-              "• Biotechnology-driven Drug Delivery Systems",
-              "• Biosensors and Bioelectronics for Diagnostics",
-              "• Biohybrid Systems and Neural Interfaces",
-              "• Sensor-integrated smart biomaterials (e.g., pH-responsive implants)"
-            ].join('\n')
+          description: [
+            "• Biotechnology-driven Drug Delivery Systems",
+            "• Biosensors and Bioelectronics for Diagnostics",
+            "• Biohybrid Systems and Neural Interfaces",
+            "• Sensor-integrated smart biomaterials (e.g., pH-responsive implants)",
+          ].join("\n"),
         },
         {
           title: "Track 6: Healthcare Security, and Emerging Tech",
-          description:
-            [
-              "• Blockchain for Secure Medical Records and Pharmaceutical Supply Chain",
-              "• Virtual Reality (VR) & Augmented Reality (AR) in Medical Training & Surgical Simulation",
-              "• Digital Twins in Healthcare",
-              "• 5G/6G Networks for Remote Patient Monitoring",
-              "• Telemedicine & Remote Diagnostics"
-            ].join('\n')
+          description: [
+            "• Blockchain for Secure Medical Records and Pharmaceutical Supply Chain",
+            "• Virtual Reality (VR) & Augmented Reality (AR) in Medical Training & Surgical Simulation",
+            "• Digital Twins in Healthcare",
+            "• 5G/6G Networks for Remote Patient Monitoring",
+            "• Telemedicine & Remote Diagnostics",
+          ].join("\n"),
         },
-
       ],
     },
     speakers: {
@@ -156,7 +150,8 @@ const content = {
       list: [
         {
           name: "Dr. Ilankumaran Kaliamoorthy",
-          designation: "Chief Executive Officer, Consultant Liver Intensivist & Anaesthetist",
+          designation:
+            "Chief Executive Officer, Consultant Liver Intensivist & Anaesthetist",
           organization: "Apollo Hospitals, Chennai Region, Chennai. ",
           image: "/Dr Ilankumaran kaliamoorthy.jpeg.jpg?height=200&width=200",
         },
@@ -174,14 +169,16 @@ const content = {
         },
         {
           name: "Dr. Mohan Narasimhan",
-          designation: "Chief Coordinator,Mental Health care & De-Addiction Programme",
+          designation:
+            "Chief Coordinator,Mental Health care & De-Addiction Programme",
           organization: "Chennai De-Addiction Centre",
           image: "/placeholder.svg?height=200&width=200",
         },
         {
           name: "Dr. N. Ramakrishnan",
           designation: "Director, Critical Care Services",
-          organization: "Apollo Hospitals and Managing Director & CEO - Chennai Critical Care Consultants",
+          organization:
+            "Apollo Hospitals and Managing Director & CEO - Chennai Critical Care Consultants",
           image: "/Dr. N. Ramakrishnan.png?height=200&width=200",
         },
         {
@@ -198,7 +195,8 @@ const content = {
         },
         {
           name: "Dr. P. Vijayalakshmi",
-          designation: "Professor & Head, Department of Electronics and Communication Engineering",
+          designation:
+            "Professor & Head, Department of Electronics and Communication Engineering",
           organization: "SSN College of Engineering, Chennai",
           image: "/Dr. P. Vijayalakshmi.jpg?height=200&width=200",
         },
@@ -211,16 +209,16 @@ const content = {
         {
           name: "Dr.Arulalan Rajan",
           designation: "Founder and Director, Vidyakosha Pvt. Ltd.,Bangalore.",
-          organization: "(Formerly Faculty, Proficiency Programme, CCE, IISc, Bangalore)",
+          organization:
+            "(Formerly Faculty, Proficiency Programme, CCE, IISc, Bangalore)",
           image: "/Dr.Arulalan Rajan.webp?height=200&width=200",
         },
         {
           name: "Mr.Madhusudhan Krishnan",
           designation: "Head-Data Science",
           organization: "AI and BI Solutions, Bristol-Myers Squibb, Hyderabad.",
-          image: "/placeholder.svg?height=200&width=200",
+          image: "/Mr.Madhusudhan Krishnan.jpeg.jpg?height=200&width=200",
         },
-       
       ],
     },
     committee: {
@@ -233,8 +231,8 @@ const content = {
       coconveners: "Co-Conveners",
       members: {
         chiefpatron: "Dr. A.C. Muthiah, Chairman, SVCE",
-         patron: "Dr.M.Sivanandham, Secretary,  SVCE",
-         copatron: "Dr.S.Ganesh Vaidyanathan, Principal, SVCE",
+        patron: "Dr.M.Sivanandham, Secretary,  SVCE",
+        copatron: "Dr.S.Ganesh Vaidyanathan, Principal, SVCE",
         chairperson: "Dr. N. Kumaratharan, Professor and Head, ECE Department",
         conveners: [
           "Dr.D.Menaka, Associate Professor , Department of Electronics and Communication Engineering, SVCE",
@@ -263,27 +261,27 @@ const content = {
     },
   },
   ta: {
-   paperSubmission: {
-  title: "கட்டுரை சமர்ப்பிப்பு வழிகாட்டுதல்கள்",
-  instructions: [
-   //  "ஆசிரியர்கள் தங்கள் கட்டுரையைத் தமிழில் மாநாட்டில் வழங்க வேண்டும்",
-   //  "கட்டுரைகள் தமிழ் மற்றும் ஆங்கிலம் இரண்டு மொழிகளிலும் சமர்ப்பிக்கப்பட வேண்டும்",
-   //  "ஆங்கில பதிப்பு தமிழ் கட்டுரையின் நேரடி மொழிபெயர்ப்பாக இருக்க வேண்டும்",
-   //  "இரண்டு பதிப்புகளும் ஒரே வடிவமைப்பு வழிகாட்டுதல்களைப் பின்பற்ற வேண்டும்",
-   //  "ஆன்லைன் போர்ட்டல் மூலம் சமர்ப்பிக்கவும் (இணைப்பு வழங்கப்படும்)"
-   "ஆசிரியர்கள் தங்கள் ஆய்வுக் கட்டுரையை தமிழில் சமர்ப்பிக்க வேண்டும்.",
-"இந்த ஆய்வுக் கட்டுரை தமிழ் மற்றும் ஆங்கிலம் ஆகிய இரு பதிப்புகளிலும் சமர்ப்பிக்கப்பட வேண்டும்."
-  ],
-  formatting: {
-    title: "வடிவமைப்பு வழிகாட்டுதல்கள்",
-    items: [
-      "குறிப்புகள் உட்பட அதிகபட்சம் 6 பக்கங்கள்",
-      "1-இன்ச் விளிம்புகளுடன் A4 அளவு காகிதம்",
-      "12pt எழுத்துரு அளவு, டைம்ஸ் நியூ ரோமன்",
-      "PDF வடிவம் மட்டும்"
-    ]
-  }
-},
+    paperSubmission: {
+      title: "கட்டுரை சமர்ப்பிப்பு வழிகாட்டுதல்கள்",
+      instructions: [
+        //  "ஆசிரியர்கள் தங்கள் கட்டுரையைத் தமிழில் மாநாட்டில் வழங்க வேண்டும்",
+        //  "கட்டுரைகள் தமிழ் மற்றும் ஆங்கிலம் இரண்டு மொழிகளிலும் சமர்ப்பிக்கப்பட வேண்டும்",
+        //  "ஆங்கில பதிப்பு தமிழ் கட்டுரையின் நேரடி மொழிபெயர்ப்பாக இருக்க வேண்டும்",
+        //  "இரண்டு பதிப்புகளும் ஒரே வடிவமைப்பு வழிகாட்டுதல்களைப் பின்பற்ற வேண்டும்",
+        //  "ஆன்லைன் போர்ட்டல் மூலம் சமர்ப்பிக்கவும் (இணைப்பு வழங்கப்படும்)"
+        "ஆசிரியர்கள் தங்கள் ஆய்வுக் கட்டுரையை தமிழில் சமர்ப்பிக்க வேண்டும்.",
+        "இந்த ஆய்வுக் கட்டுரை தமிழ் மற்றும் ஆங்கிலம் ஆகிய இரு பதிப்புகளிலும் சமர்ப்பிக்கப்பட வேண்டும்.",
+      ],
+      formatting: {
+        title: "வடிவமைப்பு வழிகாட்டுதல்கள்",
+        items: [
+          "குறிப்புகள் உட்பட அதிகபட்சம் 6 பக்கங்கள்",
+          "1-இன்ச் விளிம்புகளுடன் A4 அளவு காகிதம்",
+          "12pt எழுத்துரு அளவு, டைம்ஸ் நியூ ரோமன்",
+          "PDF வடிவம் மட்டும்",
+        ],
+      },
+    },
     nav: {
       home: "முகப்பு",
       about: "பற்றி",
@@ -307,16 +305,17 @@ const content = {
       conference: {
         title: "கருத்தரங்கம் பற்றி",
         content:
-"அகில இந்திய தொழில்நுட்பக் கல்வி மன்றம், தொழில்நுட்பக் கல்வியை இந்திய மொழிகளிலும் வழங்கும் நோக்குடன், வாணி (VAANI) என்ற திட்டத்தை அறிமுகப்படுத்தியுள்ளது. இந்தத் திட்டத்தின் மூலம், மாணவர்கள் தங்கள் தாய்மொழியில் தொழில்நுட்பக் கல்வி பயிலும் வாய்ப்பு ஏற்படுகிறது. இதன் மூலம் கல்வி மேலும் விளக்கமாகவும், அணுகக்கூடியதாகவும் மாறுகிறது. இத்தகைய முயற்சி, மாணவர்கள் பொறியியல் பாடங்களை ஆழமாகப் புரிந்து கொள்ளும் திறனை வளர்க்கும்.இந்த உயர்ந்த நோக்கத்தை ஆதரித்து, ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரியின் மின்னணு மற்றும் தொடர்பியல் துறை, \"மருத்துவத்துறையும் மருத்துவத் தொழில்நுட்பங்களும்\" என்ற தலைப்பில் இரு நாள் இருமொழி (தமிழ் மற்றும் ஆங்கிலம்) கருத்தரங்கத்தை நடத்த உள்ளது. இந்த கருத்தரங்கு, அறிவை மக்கள் அனைவருக்கும் எளிதில் எடுத்துச் செல்லும் பணியில் ஒரு முன்னோடியான படியாக அமையும். இது தொழில்நுட்ப வளர்ச்சியையும், பிராந்திய பங்களிப்பையும் ஊக்குவிக்கும். கருத்தரங்கத்தில் கல்வியாளர்கள், ஆராய்ச்சியாளர்கள், தொழில் நிபுணர்கள் மற்றும் மாணவர்கள் கலந்து கொண்டு, மருத்துவம் மற்றும் மருத்துவத் தொழில்நுட்பத்தில் மேற்கொண்ட ஆய்வுகள், கண்டுபிடிப்புகள், புதிய புரிதல்களை பகிர்ந்து கொள்வதற்கான அரிய வாய்ப்பு கிடைக்கும். குறிப்பாக, மின்னணு, சிக்னல் செயலாக்கம், பொருட்களின் இணையம் (IoT), செயற்கை நுண்ணறிவு (AI), மற்றும் உட்பொதிந்த அமைப்புகள் ஆகியவை மருத்துவ சேவைகள், நோயறிதல் முறைகள், நோயாளிக் கண்காணிப்பு மற்றும் தனிப்பயன் மருத்துவத்திற்கும் மிகப்பெரிய மாற்றங்களை ஏற்படுத்துகின்றன என்பதையும் இந்த கருத்தரங்கு முன்வைக்கும். மேலும், இந்த கருத்தரங்கு தேசியக் கல்விக் கொள்கை 2020-இன் சிறப்பு அம்சமான, உயர்கல்வியில் தாய்மொழியின் பயன்பாட்டை வலியுறுத்தும் எண்ணத்துடன் இணைந்துள்ளது. இது மாணவர்களின் கற்றல் திறனை மேம்படுத்தும் ஒரு சிறந்த முயற்சியாகும்."      },
+          'அகில இந்திய தொழில்நுட்பக் கல்வி மன்றம், தொழில்நுட்பக் கல்வியை இந்திய மொழிகளிலும் வழங்கும் நோக்குடன், வாணி (VAANI) என்ற திட்டத்தை அறிமுகப்படுத்தியுள்ளது. இந்தத் திட்டத்தின் மூலம், மாணவர்கள் தங்கள் தாய்மொழியில் தொழில்நுட்பக் கல்வி பயிலும் வாய்ப்பு ஏற்படுகிறது. இதன் மூலம் கல்வி மேலும் விளக்கமாகவும், அணுகக்கூடியதாகவும் மாறுகிறது. இத்தகைய முயற்சி, மாணவர்கள் பொறியியல் பாடங்களை ஆழமாகப் புரிந்து கொள்ளும் திறனை வளர்க்கும்.இந்த உயர்ந்த நோக்கத்தை ஆதரித்து, ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரியின் மின்னணு மற்றும் தொடர்பியல் துறை, "மருத்துவத்துறையும் மருத்துவத் தொழில்நுட்பங்களும்" என்ற தலைப்பில் இரு நாள் இருமொழி (தமிழ் மற்றும் ஆங்கிலம்) கருத்தரங்கத்தை நடத்த உள்ளது. இந்த கருத்தரங்கு, அறிவை மக்கள் அனைவருக்கும் எளிதில் எடுத்துச் செல்லும் பணியில் ஒரு முன்னோடியான படியாக அமையும். இது தொழில்நுட்ப வளர்ச்சியையும், பிராந்திய பங்களிப்பையும் ஊக்குவிக்கும். கருத்தரங்கத்தில் கல்வியாளர்கள், ஆராய்ச்சியாளர்கள், தொழில் நிபுணர்கள் மற்றும் மாணவர்கள் கலந்து கொண்டு, மருத்துவம் மற்றும் மருத்துவத் தொழில்நுட்பத்தில் மேற்கொண்ட ஆய்வுகள், கண்டுபிடிப்புகள், புதிய புரிதல்களை பகிர்ந்து கொள்வதற்கான அரிய வாய்ப்பு கிடைக்கும். குறிப்பாக, மின்னணு, சிக்னல் செயலாக்கம், பொருட்களின் இணையம் (IoT), செயற்கை நுண்ணறிவு (AI), மற்றும் உட்பொதிந்த அமைப்புகள் ஆகியவை மருத்துவ சேவைகள், நோயறிதல் முறைகள், நோயாளிக் கண்காணிப்பு மற்றும் தனிப்பயன் மருத்துவத்திற்கும் மிகப்பெரிய மாற்றங்களை ஏற்படுத்துகின்றன என்பதையும் இந்த கருத்தரங்கு முன்வைக்கும். மேலும், இந்த கருத்தரங்கு தேசியக் கல்விக் கொள்கை 2020-இன் சிறப்பு அம்சமான, உயர்கல்வியில் தாய்மொழியின் பயன்பாட்டை வலியுறுத்தும் எண்ணத்துடன் இணைந்துள்ளது. இது மாணவர்களின் கற்றல் திறனை மேம்படுத்தும் ஒரு சிறந்த முயற்சியாகும்.',
+      },
       institute: {
         title: "SVCE பற்றி",
         content:
-        "ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (ஸ்ரீ வெங்கடேஸ்வரா கல்வி மற்றும் சுகாதார அறக்கட்டளையின் ஒரு பிரிவு), தமிழ்நாட்டின் முதன்மையான தொழில்நுட்ப நிறுவனங்களில் ஒன்றாகும். இக்கல்லூரியானது பரந்து விரிந்த 95 ஏக்கர் பசுமையான வளாகத்தையும் அதிநவீன உள்கட்டமைப்புகளையும் கொண்டுள்ளது. இந்த நிறுவனம் தேசிய மதிப்பீடு மற்றும் அங்கீகாரக் கழகத்தால் (NAAC) A+ தர அடையாளத்துடன் அங்கீகரிக்கப்பட்டுள்ளது. மேலும், தகுதியுடைய அனைத்து பாடநெறிகளும் தேசிய ஒழுங்குமுறை அங்கீகார வாரியத்தால் (NBA) அங்கீகரிக்கப்பட்டுள்ளன.இந்தக் கல்வி நிறுவனம், \"சிறப்புமிக்க மையமாக\” மாறுவதை நோக்கமாகக் கொண்டு, உயர்தர பொறியியல் கல்வி வழங்குவதில் முன்னிலை வகிக்கிறது. நவீன கற்பித்தல் முறைகள், தொழில் ஒத்துழைப்பு மற்றும் நிஜ உலக பிரச்சனைகளை தீர்க்கும் அணுகுமுறைகளை ஒருங்கிணைத்து, சமூக மற்றும் தேசிய முன்னேற்றத்திற்கு திறம்பட பங்களிக்கும் பொறுப்புள்ள மற்றும் திறமையான பொறியாளர்களை உருவாக்குவதை கல்லூரி நோக்கமாகக் கொண்டுள்ளது. இந்தக் கல்லூரியில் 11 ஆராய்ச்சி மையங்கள் இயங்கி வருகின்றன.  இது புதுமை, இடைநிலை ஒத்துழைப்பு மற்றும் மேம்பட்ட சிக்கல்களைத் தீர்ப்பதில் கவனம் செலுத்துகிறது. இந்த மையங்கள் செயற்கை நுண்ணறிவு, ரோபாட்டிக்ஸ், புதுப்பிக்கத்தக்க எரிசக்தி, உயிரி தொழில்நுட்பம், சைபர் பாதுகாப்பு போன்ற அதிநவீன துறைகளில் கவனம் செலுத்துகின்றன. உலகளாவிய பரிமாணங்களுக்கும் சமூக தேவைகளுக்கும் ஏற்ப, மாணவர்களும் பேராசிரியர்களும் முக்கியமான ஆராய்ச்சி மற்றும் மேம்பாட்டு செயல்களில் ஈடுபட வேண்டும் என்பதே கல்லூரியின் ஊக்குவிப்பு நோக்கமாகும்."
+          'ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (ஸ்ரீ வெங்கடேஸ்வரா கல்வி மற்றும் சுகாதார அறக்கட்டளையின் ஒரு பிரிவு), தமிழ்நாட்டின் முதன்மையான தொழில்நுட்ப நிறுவனங்களில் ஒன்றாகும். இக்கல்லூரியானது பரந்து விரிந்த 95 ஏக்கர் பசுமையான வளாகத்தையும் அதிநவீன உள்கட்டமைப்புகளையும் கொண்டுள்ளது. இந்த நிறுவனம் தேசிய மதிப்பீடு மற்றும் அங்கீகாரக் கழகத்தால் (NAAC) A+ தர அடையாளத்துடன் அங்கீகரிக்கப்பட்டுள்ளது. மேலும், தகுதியுடைய அனைத்து பாடநெறிகளும் தேசிய ஒழுங்குமுறை அங்கீகார வாரியத்தால் (NBA) அங்கீகரிக்கப்பட்டுள்ளன.இந்தக் கல்வி நிறுவனம், "சிறப்புமிக்க மையமாக” மாறுவதை நோக்கமாகக் கொண்டு, உயர்தர பொறியியல் கல்வி வழங்குவதில் முன்னிலை வகிக்கிறது. நவீன கற்பித்தல் முறைகள், தொழில் ஒத்துழைப்பு மற்றும் நிஜ உலக பிரச்சனைகளை தீர்க்கும் அணுகுமுறைகளை ஒருங்கிணைத்து, சமூக மற்றும் தேசிய முன்னேற்றத்திற்கு திறம்பட பங்களிக்கும் பொறுப்புள்ள மற்றும் திறமையான பொறியாளர்களை உருவாக்குவதை கல்லூரி நோக்கமாகக் கொண்டுள்ளது. இந்தக் கல்லூரியில் 11 ஆராய்ச்சி மையங்கள் இயங்கி வருகின்றன.  இது புதுமை, இடைநிலை ஒத்துழைப்பு மற்றும் மேம்பட்ட சிக்கல்களைத் தீர்ப்பதில் கவனம் செலுத்துகிறது. இந்த மையங்கள் செயற்கை நுண்ணறிவு, ரோபாட்டிக்ஸ், புதுப்பிக்கத்தக்க எரிசக்தி, உயிரி தொழில்நுட்பம், சைபர் பாதுகாப்பு போன்ற அதிநவீன துறைகளில் கவனம் செலுத்துகின்றன. உலகளாவிய பரிமாணங்களுக்கும் சமூக தேவைகளுக்கும் ஏற்ப, மாணவர்களும் பேராசிரியர்களும் முக்கியமான ஆராய்ச்சி மற்றும் மேம்பாட்டு செயல்களில் ஈடுபட வேண்டும் என்பதே கல்லூரியின் ஊக்குவிப்பு நோக்கமாகும்.',
       },
       department: {
         title: "ECE துறை பற்றி",
         content:
-"மின்னணுவியல் மற்றும் தொடர்பியல் பொறியியல் துறை 1985 ஆம் ஆண்டு நிறுவப்பட்டது மற்றும் தற்போது தேசிய அங்கீகார வாரியத்தால் (NBA) அங்கீகாரம் பெற்றுள்ளது. 2002 ஆம் ஆண்டு M.E. தொடர்பியல் அமைப்பை அறிமுகப்படுத்தியது. எங்கள் துறை அண்ணா பல்கலைக்கழகத்தால் அங்கீகரிக்கப்பட்ட ஆராய்ச்சி மையமாகும், இது புதுமைகளை இயக்குகிறது, துறைகளுக்கு இடையேயான ஒத்துழைப்பை வளர்க்கிறது மற்றும் சிக்னல் செயலாக்கம், உட்பொதிக்கப்பட்ட மற்றும் IoT, VLSI, RF & மைக்ரோவேவ், ரோபாட்டிக்ஸ், AI & ML மற்றும் பல துறைகளில் ஆராய்ச்சியை ஊக்குவிக்கிறது. மாணவர்கள் மற்றும் ஆசிரியர்களிடமிருந்து செயலில் பங்கேற்பதை ஊக்குவிப்பதன் மூலம், உலகளாவிய முன்னேற்றங்கள் மற்றும் சமூகத் தேவைகளுடன் இணைந்த தாக்கத்தை ஏற்படுத்தும் ஆராய்ச்சி மற்றும் மேம்பாட்டை இந்தத் துறை ஆதரிக்கிறது. இந்தத் துறை மேம்பட்ட ஆய்வக வசதிகள் மற்றும் IE3D, ADS, CST ஸ்டுடியோ, லேப்வியூ, டேனர் கருவிகள், கேடென்ஸ், MATLAB வளாக அளவிலான உரிமம் மற்றும் PCB முன்மாதிரி இயந்திரம் போன்ற பரந்த அளவிலான மென்பொருள் கருவிகளுடன் நன்கு பொருத்தப்பட்டுள்ளது, இது கல்வி கற்றல் மற்றும் ஆராய்ச்சி நடவடிக்கைகள் இரண்டையும் ஆதரிக்கிறது. தத்துவார்த்த கருத்துக்களை நடைமுறை பொறியியல் பயன்பாடுகளுடன் இணைப்பதில் துறை முக்கிய பங்கு வகிக்கிறது, அறிவியல் ஆர்வத்தை வளர்ப்பதையும், அர்ப்பணிப்புள்ள ஆராய்ச்சி மற்றும் கல்வி மூலம் தொழில்நுட்ப முன்னேற்றங்களுக்கு பங்களிப்பதையும் நோக்கமாகக் கொண்டுள்ளது."
+          "மின்னணுவியல் மற்றும் தொடர்பியல் பொறியியல் துறை 1985 ஆம் ஆண்டு நிறுவப்பட்டது மற்றும் தற்போது தேசிய அங்கீகார வாரியத்தால் (NBA) அங்கீகாரம் பெற்றுள்ளது. 2002 ஆம் ஆண்டு M.E. தொடர்பியல் அமைப்பை அறிமுகப்படுத்தியது. எங்கள் துறை அண்ணா பல்கலைக்கழகத்தால் அங்கீகரிக்கப்பட்ட ஆராய்ச்சி மையமாகும், இது புதுமைகளை இயக்குகிறது, துறைகளுக்கு இடையேயான ஒத்துழைப்பை வளர்க்கிறது மற்றும் சிக்னல் செயலாக்கம், உட்பொதிக்கப்பட்ட மற்றும் IoT, VLSI, RF & மைக்ரோவேவ், ரோபாட்டிக்ஸ், AI & ML மற்றும் பல துறைகளில் ஆராய்ச்சியை ஊக்குவிக்கிறது. மாணவர்கள் மற்றும் ஆசிரியர்களிடமிருந்து செயலில் பங்கேற்பதை ஊக்குவிப்பதன் மூலம், உலகளாவிய முன்னேற்றங்கள் மற்றும் சமூகத் தேவைகளுடன் இணைந்த தாக்கத்தை ஏற்படுத்தும் ஆராய்ச்சி மற்றும் மேம்பாட்டை இந்தத் துறை ஆதரிக்கிறது. இந்தத் துறை மேம்பட்ட ஆய்வக வசதிகள் மற்றும் IE3D, ADS, CST ஸ்டுடியோ, லேப்வியூ, டேனர் கருவிகள், கேடென்ஸ், MATLAB வளாக அளவிலான உரிமம் மற்றும் PCB முன்மாதிரி இயந்திரம் போன்ற பரந்த அளவிலான மென்பொருள் கருவிகளுடன் நன்கு பொருத்தப்பட்டுள்ளது, இது கல்வி கற்றல் மற்றும் ஆராய்ச்சி நடவடிக்கைகள் இரண்டையும் ஆதரிக்கிறது. தத்துவார்த்த கருத்துக்களை நடைமுறை பொறியியல் பயன்பாடுகளுடன் இணைப்பதில் துறை முக்கிய பங்கு வகிக்கிறது, அறிவியல் ஆர்வத்தை வளர்ப்பதையும், அர்ப்பணிப்புள்ள ஆராய்ச்சி மற்றும் கல்வி மூலம் தொழில்நுட்ப முன்னேற்றங்களுக்கு பங்களிப்பதையும் நோக்கமாகக் கொண்டுள்ளது.",
       },
       quote:
         "நோய்நாடி நோய்முதல் நாடி அதுதணிக்கும் \nவாய்நாடி வாய்ப்பச் செயல். \n\t\t\t\t\t\t- திருக்குறள் (குறள் 948)",
@@ -325,68 +324,73 @@ const content = {
       title: "கருத்தரங்கத் தலைப்புகள்",
       items: [
         {
-          title: "தொகுப்பு 1: ரோபாட்டிக்ஸ், தானியங்கி கட்டுப்பாடு மற்றும் அறுவை சிகிச்சை செயற்கை நுண்ணறிவு (AI)",
+          title:
+            "தொகுப்பு 1: ரோபாட்டிக்ஸ், தானியங்கி கட்டுப்பாடு மற்றும் அறுவை சிகிச்சை செயற்கை நுண்ணறிவு (AI)",
           description: [
-        "• அறுவை சிகிச்சையில் ரோபாட்டிக்ஸ் மற்றும் தானியங்கி கட்டுப்பாடு",
-        "• மீளமைப்புப் பொறியியல் மற்றும் உதவித் தொழில்நுட்பங்கள்"
-      ].join('\n')
+            "• அறுவை சிகிச்சையில் ரோபாட்டிக்ஸ் மற்றும் தானியங்கி கட்டுப்பாடு",
+            "• மீளமைப்புப் பொறியியல் மற்றும் உதவித் தொழில்நுட்பங்கள்",
+          ].join("\n"),
+        },
+        {
+          title: "தொகுப்பு 2: மருத்துவ உருவப்படம் மற்றும் நோய் கண்டறிதல்",
+          description: [
+            "• மருத்துவ உருவப்படம் மற்றும் சிக்னல் செயலாக்கம்",
+            "• நோயறிதலில் செயற்கை நுண்ணறிவு (AI)",
+            "• பொதுச் சுகாதாரத்திற்கான பெரிய தரவுப் பகுப்பாய்வு",
+            "• நோயாளி பராமரிப்பில் செயற்கை நுண்ணறிவு சாட்பாட்கள் மற்றும் உதவியாளர்கள்",
+            "• படத்தின் வழிகாட்டலுடன் சிகிச்சை",
+            "• நோயறிதலில் நேரடி தரவுப் செயலாக்கம்",
+            "• பன்முக உருவப்பட இணைப்பு (Multimodal Imaging Fusion)",
+          ].join("\n"),
+        },
+        {
+          title:
+            "தொகுப்பு 3: அணிகலன்கள், இணையதளப் பொருட்கள் (IoT), மற்றும் தொலைநிலை சுகாதாரம்",
+          description: [
+            "• அணிகலன் மருத்துவ சாதனங்கள் மற்றும் தொலைவிலிருந்து கண்காணித்தல்",
+            "• புத்திசாலி மருத்துவமனைகள் மற்றும் IoT அடிப்படையிலான சுகாதார அமைப்புகள்",
+            "• தொலைநிலை நோயாளி மேலாண்மை மற்றும் நீடித்த நோய் கண்காணிப்பு",
+          ].join("\n"),
+        },
+        {
+          title:
+            "தொகுப்பு 4: 3D அச்சுப்பதிப்பகம் மற்றும் மீள்உருவாக்க மருத்துவம்",
+          description: [
+            "• மருத்துவத்தில் 3D அச்சுப்பதிப்பு (புரோஸ்தடிக்ஸ், இமPlantகள்)",
+            "• தனிப்பயனாக்கப்பட்ட புரோஸ்தடிக்ஸ் மற்றும் இமPlantகள்",
+          ].join("\n"),
+        },
+        {
+          title:
+            "தொகுப்பு 5: உயிர் எலெக்ட்ரானிக்ஸ், புத்திசாலி உயிர் பொருட்கள் மற்றும் நரம்பியல் தொழில்நுட்பம்",
+          description: [
+            "• உயிரி தொழில்நுட்ப அடிப்படையிலான மருந்து வழங்கல் முறைமைகள்",
+            "• கண்டறிதலுக்கான உயிர் உணரிகள் மற்றும் உயிர் எலெக்ட்ரானிக்ஸ்",
+            "• உயிர் இணைப்பு அமைப்புகள் மற்றும் நரம்பியல் இடைமுகங்கள்",
+            "• உணரிகள் சேர்க்கப்பட்ட புத்திசாலி உயிர் பொருட்கள் (உதாரணமாக, பிஹெச் எதிர்வினைப் பொருட்கள் கொண்ட இமPlantகள்)",
+          ].join("\n"),
+        },
+        {
+          title:
+            "தொகுப்பு 6: சுகாதார பாதுகாப்பு மற்றும் புதிய தொழில்நுட்பங்கள்",
+          description: [
+            "• பாதுகாப்பான மருத்துவ பதிவுகளுக்கும் மருந்து வழங்கல் சங்கிலிக்குமான பிளாக்செயின் தொழில்நுட்பம்",
+            "• மருத்துவ பயிற்சி மற்றும் அறுவை சிகிச்சை வடிவூட்டலில் மெய்நிகர் யதார்த்தம் (VR) மற்றும் விரிவாக்கப்பட்ட யதார்த்தம் (AR)",
+            "• சுகாதாரத்துறையில் டிஜிட்டல் ட்வின்கள் (Digital Twins)",
+            "• தொலைநிலை நோயாளி கண்காணிக்க 5G/6G நெட்வொர்க்குகள்",
+            "• தொலை மருத்துவம் மற்றும் தொலைவிலிருந்து நோய் கண்டறிதல்",
+          ].join("\n"),
+        },
+      ],
     },
-    {
-      title: "தொகுப்பு 2: மருத்துவ உருவப்படம் மற்றும் நோய் கண்டறிதல்",
-      description: [
-        "• மருத்துவ உருவப்படம் மற்றும் சிக்னல் செயலாக்கம்",
-        "• நோயறிதலில் செயற்கை நுண்ணறிவு (AI)",
-        "• பொதுச் சுகாதாரத்திற்கான பெரிய தரவுப் பகுப்பாய்வு",
-        "• நோயாளி பராமரிப்பில் செயற்கை நுண்ணறிவு சாட்பாட்கள் மற்றும் உதவியாளர்கள்",
-        "• படத்தின் வழிகாட்டலுடன் சிகிச்சை",
-        "• நோயறிதலில் நேரடி தரவுப் செயலாக்கம்",
-        "• பன்முக உருவப்பட இணைப்பு (Multimodal Imaging Fusion)"
-      ].join('\n')
-    },
-    {
-      title: "தொகுப்பு 3: அணிகலன்கள், இணையதளப் பொருட்கள் (IoT), மற்றும் தொலைநிலை சுகாதாரம்",
-      description: [
-        "• அணிகலன் மருத்துவ சாதனங்கள் மற்றும் தொலைவிலிருந்து கண்காணித்தல்",
-        "• புத்திசாலி மருத்துவமனைகள் மற்றும் IoT அடிப்படையிலான சுகாதார அமைப்புகள்",
-        "• தொலைநிலை நோயாளி மேலாண்மை மற்றும் நீடித்த நோய் கண்காணிப்பு"
-      ].join('\n')
-    },
-    {
-      title: "தொகுப்பு 4: 3D அச்சுப்பதிப்பகம் மற்றும் மீள்உருவாக்க மருத்துவம்",
-      description: [
-        "• மருத்துவத்தில் 3D அச்சுப்பதிப்பு (புரோஸ்தடிக்ஸ், இமPlantகள்)",
-        "• தனிப்பயனாக்கப்பட்ட புரோஸ்தடிக்ஸ் மற்றும் இமPlantகள்"
-      ].join('\n')
-    },
-    {
-      title: "தொகுப்பு 5: உயிர் எலெக்ட்ரானிக்ஸ், புத்திசாலி உயிர் பொருட்கள் மற்றும் நரம்பியல் தொழில்நுட்பம்",
-      description: [
-        "• உயிரி தொழில்நுட்ப அடிப்படையிலான மருந்து வழங்கல் முறைமைகள்",
-        "• கண்டறிதலுக்கான உயிர் உணரிகள் மற்றும் உயிர் எலெக்ட்ரானிக்ஸ்",
-        "• உயிர் இணைப்பு அமைப்புகள் மற்றும் நரம்பியல் இடைமுகங்கள்",
-        "• உணரிகள் சேர்க்கப்பட்ட புத்திசாலி உயிர் பொருட்கள் (உதாரணமாக, பிஹெச் எதிர்வினைப் பொருட்கள் கொண்ட இமPlantகள்)"
-      ].join('\n')
-    },
-    {
-      title: "தொகுப்பு 6: சுகாதார பாதுகாப்பு மற்றும் புதிய தொழில்நுட்பங்கள்",
-      description: [
-        "• பாதுகாப்பான மருத்துவ பதிவுகளுக்கும் மருந்து வழங்கல் சங்கிலிக்குமான பிளாக்செயின் தொழில்நுட்பம்",
-        "• மருத்துவ பயிற்சி மற்றும் அறுவை சிகிச்சை வடிவூட்டலில் மெய்நிகர் யதார்த்தம் (VR) மற்றும் விரிவாக்கப்பட்ட யதார்த்தம் (AR)",
-        "• சுகாதாரத்துறையில் டிஜிட்டல் ட்வின்கள் (Digital Twins)",
-        "• தொலைநிலை நோயாளி கண்காணிக்க 5G/6G நெட்வொர்க்குகள்",
-        "• தொலை மருத்துவம் மற்றும் தொலைவிலிருந்து நோய் கண்டறிதல்"
-      ].join('\n')
-    }
-  ],
-},
     speakers: {
       title: "முக்கிய அழைப்புப் பேச்சாளர்கள்",
       list: [
         {
           name: "முனைவர் இளங்குமரன் கலியமூர்த்தி",
-          designation: "தலைமை நிர்வாக அதிகாரி, கல்லீரல் தீவிர சிகிச்சை பிரிவு மற்றும் மயக்கவியல் நிபுணர்",
-          organization:
-            "அப்பல்லோ மருத்துவமனைகள், சென்னை பிராந்தியம், சென்னை.",
+          designation:
+            "தலைமை நிர்வாக அதிகாரி, கல்லீரல் தீவிர சிகிச்சை பிரிவு மற்றும் மயக்கவியல் நிபுணர்",
+          organization: "அப்பல்லோ மருத்துவமனைகள், சென்னை பிராந்தியம், சென்னை.",
           image: "/Dr Ilankumaran kaliamoorthy.jpeg.jpg?height=200&width=200",
         },
         {
@@ -403,14 +407,16 @@ const content = {
         },
         {
           name: "முனைவர் மோகன் நரசிம்மன்",
-          designation: "தலைமை ஒருங்கிணைப்பாளர், மனநல சேவை மற்றும் மதப்பிரிவினை நீக்கும் திட்டம்",
+          designation:
+            "தலைமை ஒருங்கிணைப்பாளர், மனநல சேவை மற்றும் மதப்பிரிவினை நீக்கும் திட்டம்",
           organization: "சென்னை டி-அடிக்ஷன் சென்டர்",
           image: "/placeholder.svg?height=200&width=200",
         },
         {
           name: "முனைவர் என். ராமகிருஷ்ணன்",
           designation: "இயக்குநர், தீவிர சிகிச்சை சேவைகள்",
-          organization: "அபோலோ மருத்துவமனை மற்றும் மேலாண்மை இயக்குநர் மற்றும் தலைமை நிர்வாக அதிகாரி –சென்னை கிரிடிக்கல் கேர் கன்சல்டன்ட்ஸ்.",
+          organization:
+            "அபோலோ மருத்துவமனை மற்றும் மேலாண்மை இயக்குநர் மற்றும் தலைமை நிர்வாக அதிகாரி –சென்னை கிரிடிக்கல் கேர் கன்சல்டன்ட்ஸ்.",
           image: "/Dr. N. Ramakrishnan.png?height=200&width=200",
         },
         {
@@ -427,7 +433,8 @@ const content = {
         },
         {
           name: "முனைவர் பி. விஜயலட்சுமி",
-          designation: "பேராசிரியர் மற்றும் தலைவர்,மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை",
+          designation:
+            "பேராசிரியர் மற்றும் தலைவர்,மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை",
           organization: "எஸ்எஸ்என் இன்ஜினியரிங் கல்லூரி, சென்னை",
           image: "/Dr. P. Vijayalakshmi.jpg?height=200&width=200",
         },
@@ -439,15 +446,18 @@ const content = {
         },
         {
           name: "முனைவர் அருளாளன் ராஜன்",
-          designation: "நிறுவனர் மற்றும் இயக்குநர், வித்யகோஷா பிவிடி. லிமிடெட்., பெங்களூர்.",
-          organization: "(முன்னாள் பேராசிரியர், திறமை மேம்பாட்டு திட்டம், தொடர்ச்சியான கல்வி மையம், இந்திய அறிவியல் நிறுவனம், பெங்களூர்.)",
+          designation:
+            "நிறுவனர் மற்றும் இயக்குநர், வித்யகோஷா பிவிடி. லிமிடெட்., பெங்களூர்.",
+          organization:
+            "(முன்னாள் பேராசிரியர், திறமை மேம்பாட்டு திட்டம், தொடர்ச்சியான கல்வி மையம், இந்திய அறிவியல் நிறுவனம், பெங்களூர்.)",
           image: "/Dr.Arulalan Rajan.webp?height=200&width=200",
         },
         {
           name: "திரு. மதுசூதன் கிருஷ்ணன்",
           designation: "தரவியல் அறிவியல் தலைவர்",
-          organization: "செயற்கை நுண்ணறிவு மற்றும் வணிக நுண்ணறிவு தீர்வுகள், பிரிஸ்டல்-மையர்ஸ் ஸ்குவிப், ஹைதராபாத்.",
-          image: "/placeholder.svg?height=200&width=200",
+          organization:
+            "செயற்கை நுண்ணறிவு மற்றும் வணிக நுண்ணறிவு தீர்வுகள், பிரிஸ்டல்-மையர்ஸ் ஸ்குவிப், ஹைதராபாத்.",
+          image: "/Mr.Madhusudhan Krishnan.jpeg.jpg?height=200&width=200",
         },
       ],
     },
@@ -460,19 +470,23 @@ const content = {
       conveners: "அழைப்பாளர்கள்",
       coconveners: "இணை அழைப்பாளர்கள்",
       members: {
-        chiefpatron: "முனைவர் ஏ.சி. முத்தையா, தலைவர், ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (SVCE)",
-         patron: "முனைவர் எம். சிவானந்தம், செயலாளர், ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (SVCE)",
-         copatron: "முனைவர் எஸ். கணேஷ் வைத்யநாதன், முதல்வர், ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (SVCE)",
-        chairperson: "முனைவர் என். குமரதரன், பேராசிரியர் மற்றும் துறைத் தலைவர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
+        chiefpatron:
+          "முனைவர் ஏ.சி. முத்தையா, தலைவர், ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (SVCE)",
+        patron:
+          "முனைவர் எம். சிவானந்தம், செயலாளர், ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (SVCE)",
+        copatron:
+          "முனைவர் எஸ். கணேஷ் வைத்யநாதன், முதல்வர், ஸ்ரீ வெங்கடேஸ்வரா பொறியியல் கல்லூரி (SVCE)",
+        chairperson:
+          "முனைவர் என். குமரதரன், பேராசிரியர் மற்றும் துறைத் தலைவர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
         conveners: [
           "முனைவர் டி. மேனகா, தொடர்பாசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
-          "திருமதி எல். அஞ்சு, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE"
+          "திருமதி எல். அஞ்சு, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
         ],
         coconveners: [
           "திருமதி கே. ஸ்ரீவித்யா, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
           "திருமதி கே.எஸ். சுபாஷினி, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
           "திருமதி எஸ். கல்யாணி, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
-          "திரு எம். கே. வரதராஜன், உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE"
+          "திரு எம். கே. வரதராஜன், உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
         ],
       },
     },
@@ -506,10 +520,53 @@ export default function MedNextConference() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    setMobileMenuOpen(false);
-  };
+//   const scrollToSection = (id: string) => {
+//     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+//     setMobileMenuOpen(false);
+//   };
+
+// Replace your current scrollToSection function with this:
+const scrollToSection = (id: string) => {
+  setMobileMenuOpen(false);
+  
+  setTimeout(() => {
+    const element = document.getElementById(id);
+    if (element) {
+      // Calculate position accounting for header height (80px in this case)
+      const headerHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  }, 100);
+};
+
+// Update your mobile menu buttons to use this:
+{mobileMenuOpen && (
+  <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
+    <div className="py-4 space-y-2">
+      {Object.entries(t.nav).map(([key, value]) => (
+        <button
+          key={key}
+          onClick={() => {
+            // Close menu immediately
+            setMobileMenuOpen(false);
+            // Scroll after slight delay
+            setTimeout(() => scrollToSection(key === "home" ? "hero" : key), 100);
+          }}
+          className="block w-full text-left px-4 py-2 text-white hover:bg-blue-600 transition-colors"
+        >
+          {value}
+        </button>
+      ))}
+    </div>
+  </div>
+)}
+
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "en" ? "ta" : "en"));
@@ -517,38 +574,40 @@ export default function MedNextConference() {
 
   return (
     <div className="min-h-screen bg-white">
-{/* Logo Strip - No Border, Narrow, Large Logos */}
-<div className="bg-white py-2">  {/* Reduced padding (py-4 → py-2) */}
-  <div className="container mx-auto px-4 flex items-center justify-between">
-    <div className="flex items-center">
-      <Image
-        src="/AICTE_Logo.png?height=80&width=160"
-        alt="AICTE Logo"
-        width={160}
-        height={80}
-        className="h-16 w-auto"  // Large logo (h-16)
-      />
-    </div>
-    <div className="text-center">
-  <h1 className="text-5xl font-bold text-[#004aad]">
-    {language === "ta" ? (
-      <span className="text-4xl font-tamil">மெட்நெக்ஸ்ட் 2025</span>
-    ) : (
-      "MedNext 2025"
-    )}
-  </h1>
-</div>
-    <div className="flex items-center">
-      <Image
-        src="/svce_logo.jpg?height=80&width=200"
-        alt="SVCE Logo"
-        width={200}
-        height={80}
-        className="h-16 w-auto"  // Large logo (h-16)
-      />
-    </div>
-  </div>
-</div>
+      {/* Logo Strip - No Border, Narrow, Large Logos */}
+      <div className="bg-white py-2">
+        {" "}
+        {/* Reduced padding (py-4 → py-2) */}
+        <div className="container mx-auto px-4 flex items-center justify-between">
+          <div className="flex items-center">
+            <Image
+              src="/AICTE_Logo.png?height=80&width=160"
+              alt="AICTE Logo"
+              width={160}
+              height={80}
+              className="h-16 w-auto" // Large logo (h-16)
+            />
+          </div>
+          <div className="text-center">
+            <h1 className="text-5xl font-bold text-[#004aad]">
+              {language === "ta" ? (
+                <span className="text-4xl font-tamil">மெட்நெக்ஸ்ட் 2025</span>
+              ) : (
+                "MedNext 2025"
+              )}
+            </h1>
+          </div>
+          <div className="flex items-center">
+            <Image
+              src="/svce_logo.jpg?height=80&width=200"
+              alt="SVCE Logo"
+              width={200}
+              height={80}
+              className="h-16 w-auto" // Large logo (h-16)
+            />
+          </div>
+        </div>
+      </div>
 
       {/* Navigation */}
       <nav
@@ -629,18 +688,18 @@ export default function MedNextConference() {
       >
         <div className="absolute inset-0 bg-black/20"></div>
         {/* Image Background */}
-         <div className="absolute inset-0">
-            <Image
-               src="svce_abt_college.jpg" // Replace with your image path
-               alt="Conference Background"
-               fill
-               className="object-cover"
-               quality={100}
-               priority // Important for hero images
-            />
-            {/* Dark overlay for better text contrast */}
-            <div className="absolute inset-0 bg-black/40"></div>
-         </div>
+        <div className="absolute inset-0">
+          <Image
+            src="svce_abt_college.jpg" // Replace with your image path
+            alt="Conference Background"
+            fill
+            className="object-cover"
+            quality={100}
+            priority // Important for hero images
+          />
+          {/* Dark overlay for better text contrast */}
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
 
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 animate-pulse"></div>
@@ -740,8 +799,6 @@ export default function MedNextConference() {
         </div>
       </section>
 
-
-
       {/* Tracks Section */}
       <section id="tracks" className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -772,34 +829,36 @@ export default function MedNextConference() {
       </section>
 
       {/* Paper Submission Section */}
-<section id="instructions" className="py-20 bg-white">
-  <div className="container mx-auto px-4">
-    <h2 className="text-4xl font-bold text-center text-[#004aad] mb-16">
-      {t.paperSubmission.title}
-    </h2>
+      <section id="instructions" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-bold text-center text-[#004aad] mb-16">
+            {t.paperSubmission.title}
+          </h2>
 
-    <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
-      <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <CardHeader>
-          <CardTitle className="text-[#004aad]">
-            {language === "ta" ? "முக்கிய வழிமுறைகள்" : "Key Instructions"}
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <ul className="space-y-3">
-            {t.paperSubmission.instructions.map((item, index) => (
-              <li key={index} className="flex items-start">
-                <span className="text-[#ff914d] mr-2">•</span>
-                <span className={language === "ta" ? "font-tamil" : ""}>
-                  {item}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </CardContent>
-      </Card>
+          <div className="grid md:grid-cols-1 gap-8 max-w-4xl mx-auto">
+            <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <CardHeader>
+                <CardTitle className="text-[#004aad]">
+                  {language === "ta"
+                    ? "முக்கிய வழிமுறைகள்"
+                    : "Key Instructions"}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-3">
+                  {t.paperSubmission.instructions.map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-[#ff914d] mr-2">•</span>
+                      <span className={language === "ta" ? "font-tamil" : ""}>
+                        {item}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
 
-      {/* <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+            {/* <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
         <CardHeader>
           <CardTitle className="text-[#004aad]">
             {t.paperSubmission.formatting.title}
@@ -818,9 +877,9 @@ export default function MedNextConference() {
           </ul>
         </CardContent>
       </Card> */}
-    </div>
+          </div>
 
-    {/* <div className="text-center mt-12">
+          {/* <div className="text-center mt-12">
       <Button
         asChild
         size="lg"
@@ -837,9 +896,8 @@ export default function MedNextConference() {
         </a>
       </Button>
     </div> */}
-  </div>
-</section>
-
+        </div>
+      </section>
 
       {/* Speakers Section */}
       <section id="speakers" className="py-20 bg-[#f4f5f7]">
@@ -896,7 +954,9 @@ export default function MedNextConference() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700">{t.committee.members.chiefpatron}</p>
+                <p className="text-gray-700">
+                  {t.committee.members.chiefpatron}
+                </p>
               </CardContent>
             </Card>
 
@@ -1063,7 +1123,7 @@ export default function MedNextConference() {
 
             <div className="flex flex-col justify-center">
               <div className="space-y-4">
-               <div className="flex items-center">
+                <div className="flex items-center">
                   <span className="text-2xl font-bold mb-2">Contact Us</span>
                 </div>
                 <div className="flex items-center">
@@ -1085,14 +1145,13 @@ export default function MedNextConference() {
           <div className="border-t border-blue-600 mt-8 pt-8 text-center">
             <p>{t.footer.copyright}</p>
             <a
-      href="https://github.com/BawadharaniSree"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-black hover:underline"
-    >
-            <p>{t.footer.dev}</p>
-          </a>
-
+              href="https://github.com/BawadharaniSree"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:underline"
+            >
+              <p>{t.footer.dev}</p>
+            </a>
           </div>
         </div>
       </footer>
