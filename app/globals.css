@@ -227,3 +227,33 @@ textarea:focus-visible {
     page-break-after: avoid;
   }
 }
+
+
+/* Add to your global CSS or as a style tag 
+.visitor-counter {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #004aad;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  opacity: 0.3;
+}
+
+.visitor-counter:hover {
+  opacity: 1;
+}
+
+.visitor-counter .label {
+  display: none;
+}
+
+.visitor-counter:hover .label {
+  display: inline;
+}
+
+  */

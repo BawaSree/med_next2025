@@ -576,7 +576,7 @@ export default function MedNextConference() {
   const [language, setLanguage] = useState<"en" | "ta">("en");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  const [visitCount, setVisitCount] = useState(0);
+  {/*const [visitCount, setVisitCount] = useState(0);
 
   // Visitor counter effect
   useEffect(() => {
@@ -586,6 +586,56 @@ export default function MedNextConference() {
     localStorage.setItem('siteVisits', newCount.toString());
     setVisitCount(newCount);
   }, []);
+  */}
+//   const [visitCount, setVisitCount] = useState(0);
+
+// useEffect(() => {
+//   // Create a unique visitor ID (not perfect but better than localStorage)
+//   const visitorId = Math.random().toString(36).substring(2) + Date.now().toString(36);
+  
+//   const trackVisit = async () => {
+//     try {
+//       const response = await fetch('/api/visits', {
+//         method: 'POST',
+//         headers: { 'Content-Type': 'application/json' },
+//         body: JSON.stringify({ visitorId })
+//       });
+//       const data = await response.json();
+//       setVisitCount(data.totalVisits);
+//     } catch (error) {
+//       console.error('Failed to track visit:', error);
+//     }
+//   };
+
+//   trackVisit();
+// }, []);
+
+const [visitCount, setVisitCount] = useState(0);
+
+useEffect(() => {
+  const trackVisit = async () => {
+    try {
+      const response = await fetch('/api/visits', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to track visit');
+      }
+      
+      const data = await response.json();
+      setVisitCount(data.totalVisits);
+    } catch (error) {
+      console.error('Visit tracking failed:', error);
+      // Fallback to localStorage if API fails
+      const localCount = localStorage.getItem('visitCount');
+      setVisitCount(localCount ? parseInt(localCount) : 0);
+    }
+  };
+
+  trackVisit();
+}, []);
 
   const t = content[language];
 
