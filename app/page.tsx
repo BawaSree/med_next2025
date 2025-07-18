@@ -24,6 +24,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 {/*}
 export default function MedNextConference() {
@@ -647,6 +648,33 @@ export default function MedNextConference() {
 
   return (
     <div className="min-h-screen bg-white">
+
+
+       {/* Add this visitor counter at the very end 
+      <div className="visitor-counter">
+        <span className="label">Visitors: </span>
+        {visitCount.toLocaleString()}
+      </div>
+      */}
+
+   
+      <motion.div
+      className="fixed bottom-4 right-4 bg-[#ff914d] text-white px-4 py-2 rounded-md shadow-lg z-50"
+      initial={{ opacity: 0.7, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ opacity: 1, scale: 1.25 }}
+      transition={{ duration: 0.3 }}
+      >
+      <div className="flex flex-col items-center">
+    <span className="text-sm">
+      {language === 'ta' ? 'மொத்த பார்வைகள்:' : 'Total visits:'}
+    </span>
+    <span className="text-xl font-bold">{visitCount.toLocaleString()}</span>
+  </div>
+      </motion.div>
+
+
+      
       {/* Logo Strip - No Border, Narrow, Large Logos 
       <div className="bg-white py-2">
         {" "}
@@ -1278,7 +1306,7 @@ export default function MedNextConference() {
             </div>
           </div>
 
-                    {/* Add this visitor counter box */}
+                    {/* Add this visitor counter box 
           <div className="mt-12 flex justify-center">
             <div className="bg-white p-4 rounded-lg shadow-md text-center border border-gray-200">
               <div className="text-sm text-gray-600 mb-1">
@@ -1289,7 +1317,7 @@ export default function MedNextConference() {
               </div>
             </div>
           </div>
-
+*/}
 
         </div>
       </section>
@@ -1353,6 +1381,7 @@ export default function MedNextConference() {
   </div>
   */}
       </footer>
+      
     </div>
   );
 }
