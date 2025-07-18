@@ -658,7 +658,7 @@ export default function MedNextConference() {
 
       
 
-      {/* Navigation */}
+      {/* Navigation 
       <nav
         className={`sticky top-0 z-50 bg-[#004aad] transition-all duration-300 ${
           scrollY > 100 ? "shadow-lg" : ""
@@ -702,7 +702,7 @@ export default function MedNextConference() {
             </div>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Mobile Menu 
           {mobileMenuOpen && (
             <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
               <div className="py-4 space-y-2">
@@ -722,6 +722,69 @@ export default function MedNextConference() {
           )}
         </div>
       </nav>
+
+      */}
+
+      {/* Navigation */}
+<nav className={`sticky top-0 z-50 bg-[#004aad] transition-all duration-300 ${scrollY > 100 ? "shadow-lg" : ""}`}>
+  <div className="container mx-auto px-4">
+    <div className="flex items-center justify-between h-16">
+      {/* Desktop Navigation - unchanged */}
+      <div className="hidden lg:flex space-x-8">
+        {Object.entries(t.nav).map(([key, value]) => (
+          <button
+            key={key}
+            onClick={() => scrollToSection(key === "home" ? "hero" : key)}
+            className="text-white hover:text-[#ff914d] transition-colors duration-200 font-medium"
+          >
+            {value}
+          </button>
+        ))}
+      </div>
+
+      {/* Mobile buttons - moved to right side */}
+      <div className="flex items-center space-x-4 ml-auto"> {/* Added ml-auto here */}
+        <Button
+          onClick={toggleLanguage}
+          variant="outline"
+          size="sm"
+          className="bg-white text-[#004aad] border-white hover:bg-[#ff914d] hover:text-white hover:border-[#ff914d]"
+        >
+          <Globe className="w-4 h-4 mr-2" />
+          {language === "en" ? "தமிழ்" : "English"}
+        </Button>
+
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="lg:hidden text-white"
+        >
+          {mobileMenuOpen ? (
+            <X className="w-6 h-6" />
+          ) : (
+            <Menu className="w-6 h-6" />
+          )}
+        </button>
+      </div>
+    </div>
+
+    {/* Mobile Menu - unchanged */}
+    {mobileMenuOpen && (
+      <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
+        <div className="py-4 space-y-2">
+          {Object.entries(t.nav).map(([key, value]) => (
+            <button
+              key={key}
+              onClick={() => scrollToSection(key === "home" ? "hero" : key)}
+              className="block w-full text-left px-4 py-2 text-white hover:bg-blue-600 transition-colors"
+            >
+              {value}
+            </button>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</nav>
 
       {/* Scrolling Announcement */}
       <div className="bg-[#ff914d] text-white py-2 overflow-hidden">
