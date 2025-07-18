@@ -25,6 +25,69 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 
+{/*}
+export default function MedNextConference() {
+  const [language, setLanguage] = useState<"en" | "ta">("en");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const [visitCount, setVisitCount] = useState(0); // Add this state
+
+  // Add this useEffect hook
+  useEffect(() => {
+    // Get current count from localStorage or initialize to 0
+    const count = localStorage.getItem('websiteVisitCount');
+    const newCount = count ? parseInt(count) + 1 : 1;
+    
+    // Update localStorage and state
+    localStorage.setItem('websiteVisitCount', newCount.toString());
+    setVisitCount(newCount);
+    
+    // Optional: Log to console
+    console.log(`Website visited ${newCount} times`);
+  }, []); // Empty dependency array means this runs once on mount
+
+  // ... rest of your existing code ...
+}
+
+export default function MedNextConference() {
+  // ... your existing state ...
+  const [visitCount, setVisitCount] = useState(0);
+
+  useEffect(() => {
+    // Get or initialize count
+    const storedCount = localStorage.getItem('siteVisits');
+    const currentCount = storedCount ? parseInt(storedCount) : 0;
+    const newCount = currentCount + 1;
+    
+    // Update storage and state
+    localStorage.setItem('siteVisits', newCount.toString());
+    setVisitCount(newCount);
+  }, []);
+  
+  // ... rest of your component ...
+}
+
+*/}
+{/*
+export default function MedNextConference() {
+  const [language, setLanguage] = useState<"en" | "ta">("en");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+  const [visitCount, setVisitCount] = useState(0); // Visitor counter state
+
+  // Visitor counter effect
+  useEffect(() => {
+    const storedCount = localStorage.getItem('siteVisits');
+    const currentCount = storedCount ? parseInt(storedCount) : 0;
+    const newCount = currentCount + 1;
+    localStorage.setItem('siteVisits', newCount.toString());
+    setVisitCount(newCount);
+  }, []);
+
+*/}
+
+
+
 // Language content
 const content = {
   en: {
@@ -251,7 +314,7 @@ const content = {
       title: "Registration",
       fee: "No Registration Fee",
       limited: "Limited to 50 Participants",
-      deadline: "Last Date: September 10, 2025",
+      deadline: "Last Date for Abstract Submission: August 5, 2025",
       form: "Registration Form",
       whatsapp: "WhatsApp Group",
     },
@@ -495,7 +558,7 @@ const content = {
       title: "பதிவு",
       fee: "பதிவு கட்டணம் இல்லை",
       limited: "50 பேர் மட்டும்",
-      deadline: "கடைசி தேதி: செப்டம்பர் 10, 2025",
+      deadline: "சுருக்கம் சமர்ப்பிப்பதற்கான கடைசி தேதி: ஆகஸ்ட் 5, 2025",
       form: "பதிவு படிவம்",
       whatsapp: "வாட்ஸ்அப் குழு",
     },
@@ -512,14 +575,18 @@ export default function MedNextConference() {
   const [language, setLanguage] = useState<"en" | "ta">("en");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+  const [visitCount, setVisitCount] = useState(0);
+
+  // Visitor counter effect
+  useEffect(() => {
+    const storedCount = localStorage.getItem('siteVisits');
+    const currentCount = storedCount ? parseInt(storedCount) : 0;
+    const newCount = currentCount + 1;
+    localStorage.setItem('siteVisits', newCount.toString());
+    setVisitCount(newCount);
+  }, []);
 
   const t = content[language];
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   //   const scrollToSection = (id: string) => {
   //     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -1210,6 +1277,20 @@ export default function MedNextConference() {
               </Button>
             </div>
           </div>
+
+                    {/* Add this visitor counter box */}
+          <div className="mt-12 flex justify-center">
+            <div className="bg-white p-4 rounded-lg shadow-md text-center border border-gray-200">
+              <div className="text-sm text-gray-600 mb-1">
+                Total Website Visitors
+              </div>
+              <div className="text-2xl font-bold text-[#004aad]">
+                {visitCount.toLocaleString()}
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </section>
 
@@ -1266,6 +1347,11 @@ export default function MedNextConference() {
             </a>
           </div>
         </div>
+        {/*}
+        <div className="text-center text-xs mt-4">
+    Total visits: {visitCount}
+  </div>
+  */}
       </footer>
     </div>
   );
