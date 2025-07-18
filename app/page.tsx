@@ -59,7 +59,7 @@ const content = {
       registration: "Registration",
     },
     hero: {
-      title: "MedNext 2025:",
+      title: "MedNext 2025",
       subtitle:
         "Shaping the future of Healthcare with AI, Imaging, Devices & Diagnostics",
       dates: "9 & 10 October 2025",
@@ -233,7 +233,8 @@ const content = {
         chiefpatron: "Dr. A.C. Muthiah, Chairman, SVCE",
         patron: "Dr.M.Sivanandham, Secretary,  SVCE",
         copatron: "Dr.S.Ganesh Vaidyanathan, Principal, SVCE",
-        chairperson: "Dr. N. Kumaratharan, Professor and Head, Department of Electronics and Communication Engineering, SVCE",
+        chairperson:
+          "Dr. N. Kumaratharan, Professor and Head, Department of Electronics and Communication Engineering, SVCE",
         conveners: [
           "Dr.D.Menaka, Associate Professor , Department of Electronics and Communication Engineering, SVCE",
           "Ms. L. Anju, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
@@ -579,10 +580,10 @@ export default function MedNextConference() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Logo Strip - No Border, Narrow, Large Logos */}
+      {/* Logo Strip - No Border, Narrow, Large Logos 
       <div className="bg-white py-2">
         {" "}
-        {/* Reduced padding (py-4 → py-2) */}
+        {/* Reduced padding (py-4 → py-2) 
         <div className="container mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center">
             <Image
@@ -613,6 +614,49 @@ export default function MedNextConference() {
           </div>
         </div>
       </div>
+      */}
+
+
+      {/* Logo Strip - Responsive for both desktop and mobile */}
+<div className="bg-white py-2">
+  <div className="container mx-auto px-4 flex items-center justify-between">
+    {/* AICTE Logo - Maintain aspect ratio */}
+    <div className="flex items-center">
+      <Image
+        src="/AICTE_Logo.png"
+        alt="AICTE Logo"
+        width={160}
+        height={80}
+        className="h-12 sm:h-16 w-auto" // Smaller on mobile (h-10), normal on desktop (sm:h-16)
+      />
+    </div>
+
+    {/* Conference Title - Responsive text sizing */}
+    <div className="text-center">
+      <h1 className="text-2xl sm:text-5xl font-bold text-[#004aad]">
+        {language === "ta" ? (
+          <span className="text-xl sm:text-4xl font-tamil">மெட்நெக்ஸ்ட் 2025</span>
+        ) : (
+          "MedNext 2025"
+        )}
+      </h1>
+    </div>
+
+    {/* SVCE Logo - Maintain aspect ratio */}
+    <div className="flex items-center">
+      <Image
+        src="/svce_logo.jpg"
+        alt="SVCE Logo"
+        width={200}
+        height={80}
+        className="h-12 sm:h-16 w-auto" // Smaller on mobile (h-10), normal on desktop (sm:h-16)
+      />
+    </div>
+  </div>
+</div>
+
+
+      
 
       {/* Navigation */}
       <nav
