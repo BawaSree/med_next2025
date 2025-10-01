@@ -22,72 +22,10 @@ import {
   Mail,
   ExternalLink,
   MessageCircle,
+  FileDown,
 } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-{/*}
-export default function MedNextConference() {
-  const [language, setLanguage] = useState<"en" | "ta">("en");
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const [visitCount, setVisitCount] = useState(0); // Add this state
-
-  // Add this useEffect hook
-  useEffect(() => {
-    // Get current count from localStorage or initialize to 0
-    const count = localStorage.getItem('websiteVisitCount');
-    const newCount = count ? parseInt(count) + 1 : 1;
-    
-    // Update localStorage and state
-    localStorage.setItem('websiteVisitCount', newCount.toString());
-    setVisitCount(newCount);
-    
-    // Optional: Log to console
-    console.log(`Website visited ${newCount} times`);
-  }, []); // Empty dependency array means this runs once on mount
-
-  // ... rest of your existing code ...
-}
-
-export default function MedNextConference() {
-  // ... your existing state ...
-  const [visitCount, setVisitCount] = useState(0);
-
-  useEffect(() => {
-    // Get or initialize count
-    const storedCount = localStorage.getItem('siteVisits');
-    const currentCount = storedCount ? parseInt(storedCount) : 0;
-    const newCount = currentCount + 1;
-    
-    // Update storage and state
-    localStorage.setItem('siteVisits', newCount.toString());
-    setVisitCount(newCount);
-  }, []);
-  
-  // ... rest of your component ...
-}
-
-*/}
-{/*
-export default function MedNextConference() {
-  const [language, setLanguage] = useState<"en" | "ta">("en");
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const [visitCount, setVisitCount] = useState(0); // Visitor counter state
-
-  // Visitor counter effect
-  useEffect(() => {
-    const storedCount = localStorage.getItem('siteVisits');
-    const currentCount = storedCount ? parseInt(storedCount) : 0;
-    const newCount = currentCount + 1;
-    localStorage.setItem('siteVisits', newCount.toString());
-    setVisitCount(newCount);
-  }, []);
-
-*/}
-
-
 
 // Language content
 const content = {
@@ -102,6 +40,7 @@ const content = {
         //  "Submit through our online portal (link will be provided)"
         "Authors need to present their paper in Tamil.",
         "The paper must be submitted in both Tamil and English versions.",
+        "The Paper must be Bilingual (Tamil and English).",
       ],
       formatting: {
         title: "Formatting Guidelines",
@@ -223,7 +162,7 @@ const content = {
           name: "Mr.Sriram Bhakthan",
           designation: "Sr. Technical Support Manager",
           organization: "Wipro GE Healthcare",
-          image: "/placeholder.svg?height=200&width=200",
+          image: "/1114895.png?height=200&width=200",
         },
         {
           name: "Dr.Jagdish.A.K",
@@ -304,7 +243,7 @@ const content = {
           "Ms. L. Anju, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
         ],
         coconveners: [
-          "Ms.K.Srividhya, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
+          "Dr.K.Srividhya, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
           "Ms.K.S.Subhashini, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
           "Ms.S.Kalyani, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
           "Mr.M.K.Varadarajan, Assistant Professor, Department of Electronics and Communication Engineering, SVCE",
@@ -315,10 +254,11 @@ const content = {
       title: "Registration",
       fee: "No Registration Fee",
       limited: "Limited to 50 Participants",
-      deadline: "Last Date for Abstract Submission: August 5, 2025",
+      deadline: "Last Date for Paper Submission: September 10, 2025",
       form: "Registration Form",
       whatsapp: "WhatsApp Group",
     },
+
     footer: {
       title: "Getting Here",
       copyright: "© 2025 MedNext Conference. All rights reserved.",
@@ -336,6 +276,7 @@ const content = {
         //  "ஆன்லைன் போர்ட்டல் மூலம் சமர்ப்பிக்கவும் (இணைப்பு வழங்கப்படும்)"
         "ஆசிரியர்கள் தங்கள் ஆய்வுக் கட்டுரையை தமிழில் சமர்ப்பிக்க வேண்டும்.",
         "இந்த ஆய்வுக் கட்டுரை தமிழ் மற்றும் ஆங்கிலம் ஆகிய இரு பதிப்புகளிலும் சமர்ப்பிக்கப்பட வேண்டும்.",
+        "இந்த வினாத்தாள் இருமொழி (தமிழ் மற்றும் ஆங்கிலம்) ஆக இருக்க வேண்டும்.",
       ],
       formatting: {
         title: "வடிவமைப்பு வழிகாட்டுதல்கள்",
@@ -462,7 +403,7 @@ const content = {
           name: "திரு. ஸ்ரீராம் பக்தன்",
           designation: "மூத்த தொழில்நுட்ப ஆதரவு மேலாளர்",
           organization: "விப்ரோ ஜி.இ. ஹெல்த்கேர்",
-          image: "/placeholder.svg?height=200&width=200",
+          image: "/1114895.png?height=200&width=200",
         },
         {
           name: "முனைவர் ஜெகதீஷ் ஏ.கே.",
@@ -548,7 +489,7 @@ const content = {
           "திருமதி எல். அஞ்சு, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
         ],
         coconveners: [
-          "திருமதி கே. ஸ்ரீவித்யா, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
+          "டாக்டர் கே. ஸ்ரீவித்யா, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
           "திருமதி கே.எஸ். சுபாஷினி, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
           "திருமதி எஸ். கல்யாணி, உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
           "திரு எம். கே. வரதராஜன், உதவிப் பேராசிரியர், மின்னணு மற்றும் தொடர்பியல் பொறியியல் துறை, SVCE",
@@ -559,7 +500,7 @@ const content = {
       title: "பதிவு",
       fee: "பதிவு கட்டணம் இல்லை",
       limited: "50 பேர் மட்டும்",
-      deadline: "சுருக்கம் சமர்ப்பிப்பதற்கான கடைசி தேதி: ஆகஸ்ட் 5, 2025",
+      deadline: "கட்டுரை சமர்ப்பிப்பதற்கான கடைசி தேதி: செப்டம்பர் 10, 2025",
       form: "பதிவு படிவம்",
       whatsapp: "வாட்ஸ்அப் குழு",
     },
@@ -576,75 +517,36 @@ export default function MedNextConference() {
   const [language, setLanguage] = useState<"en" | "ta">("en");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
-  {/*const [visitCount, setVisitCount] = useState(0);
 
-  // Visitor counter effect
+  const [visitCount, setVisitCount] = useState(0);
+
   useEffect(() => {
-    const storedCount = localStorage.getItem('siteVisits');
-    const currentCount = storedCount ? parseInt(storedCount) : 0;
-    const newCount = currentCount + 1;
-    localStorage.setItem('siteVisits', newCount.toString());
-    setVisitCount(newCount);
-  }, []);
-  */}
-//   const [visitCount, setVisitCount] = useState(0);
+    const trackVisit = async () => {
+      try {
+        const response = await fetch("/api/visits", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+        });
 
-// useEffect(() => {
-//   // Create a unique visitor ID (not perfect but better than localStorage)
-//   const visitorId = Math.random().toString(36).substring(2) + Date.now().toString(36);
-  
-//   const trackVisit = async () => {
-//     try {
-//       const response = await fetch('/api/visits', {
-//         method: 'POST',
-//         headers: { 'Content-Type': 'application/json' },
-//         body: JSON.stringify({ visitorId })
-//       });
-//       const data = await response.json();
-//       setVisitCount(data.totalVisits);
-//     } catch (error) {
-//       console.error('Failed to track visit:', error);
-//     }
-//   };
+        if (!response.ok) {
+          throw new Error("Failed to track visit");
+        }
 
-//   trackVisit();
-// }, []);
-
-const [visitCount, setVisitCount] = useState(0);
-
-useEffect(() => {
-  const trackVisit = async () => {
-    try {
-      const response = await fetch('/api/visits', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-      });
-      
-      if (!response.ok) {
-        throw new Error('Failed to track visit');
+        const data = await response.json();
+        setVisitCount(data.totalVisits);
+      } catch (error) {
+        console.error("Visit tracking failed:", error);
+        // Fallback to localStorage if API fails
+        const localCount = localStorage.getItem("visitCount");
+        setVisitCount(localCount ? Number.parseInt(localCount) : 0);
       }
-      
-      const data = await response.json();
-      setVisitCount(data.totalVisits);
-    } catch (error) {
-      console.error('Visit tracking failed:', error);
-      // Fallback to localStorage if API fails
-      const localCount = localStorage.getItem('visitCount');
-      setVisitCount(localCount ? parseInt(localCount) : 0);
-    }
-  };
+    };
 
-  trackVisit();
-}, []);
+    trackVisit();
+  }, []);
 
   const t = content[language];
 
-  //   const scrollToSection = (id: string) => {
-  //     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  //     setMobileMenuOpen(false);
-  //   };
-
-  // Replace your current scrollToSection function with this:
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
 
@@ -665,49 +567,13 @@ useEffect(() => {
     }, 100);
   };
 
-  // Update your mobile menu buttons to use this:
-  {
-    mobileMenuOpen && (
-      <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
-        <div className="py-4 space-y-2">
-          {Object.entries(t.nav).map(([key, value]) => (
-            <button
-              key={key}
-              onClick={() => {
-                // Close menu immediately
-                setMobileMenuOpen(false);
-                // Scroll after slight delay
-                setTimeout(
-                  () => scrollToSection(key === "home" ? "hero" : key),
-                  100
-                );
-              }}
-              className="block w-full text-left px-4 py-2 text-white hover:bg-blue-600 transition-colors"
-            >
-              {value}
-            </button>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === "en" ? "ta" : "en"));
   };
 
   return (
     <div className="min-h-screen bg-white">
-
-
-       {/* Add this visitor counter at the very end 
-      <div className="visitor-counter">
-        <span className="label">Visitors: </span>
-        {visitCount.toLocaleString()}
-      </div>
-      */}
-
-   
+      {/*}
       <motion.div
       className="fixed bottom-4 right-4 bg-[#ff914d] text-white px-4 py-2 rounded-md shadow-lg z-50"
       initial={{ opacity: 0.7, y: 20 }}
@@ -715,6 +581,7 @@ useEffect(() => {
       whileHover={{ opacity: 1, scale: 1.25 }}
       transition={{ duration: 0.3 }}
       >
+         
       <div className="flex flex-col items-center">
     <span className="text-sm">
       {language === 'ta' ? 'மொத்த பார்வைகள்:' : 'Total visits:'}
@@ -723,87 +590,49 @@ useEffect(() => {
   </div>
       </motion.div>
 
+*/}
 
-      
-      {/* Logo Strip - No Border, Narrow, Large Logos 
+      {/* Logo Strip - Responsive for both desktop and mobile */}
       <div className="bg-white py-2">
-        {" "}
-        {/* Reduced padding (py-4 → py-2) 
         <div className="container mx-auto px-4 flex items-center justify-between">
+          {/* AICTE Logo - Maintain aspect ratio */}
           <div className="flex items-center">
             <Image
-              src="/AICTE_Logo.png?height=80&width=160"
+              src="/AICTE_Logo.png"
               alt="AICTE Logo"
               width={160}
               height={80}
-              className="h-16 w-auto" // Large logo (h-16)
+              className="h-12 sm:h-16 w-auto" // Smaller on mobile (h-10), normal on desktop (sm:h-16)
             />
           </div>
+
+          {/* Conference Title - Responsive text sizing */}
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-[#004aad]">
+            <h1 className="text-2xl sm:text-5xl font-bold text-[#004aad]">
               {language === "ta" ? (
-                <span className="text-4xl font-tamil">மெட்நெக்ஸ்ட் 2025</span>
+                <span className="text-xl sm:text-4xl font-tamil">
+                  மெட்நெக்ஸ்ட் 2025
+                </span>
               ) : (
                 "MedNext 2025"
               )}
             </h1>
           </div>
+
+          {/* SVCE Logo - Maintain aspect ratio */}
           <div className="flex items-center">
             <Image
-              src="/svce_logo.jpg?height=80&width=200"
+              src="/svce_logo.jpg"
               alt="SVCE Logo"
               width={200}
               height={80}
-              className="h-16 w-auto" // Large logo (h-16)
+              className="h-12 sm:h-16 w-auto" // Smaller on mobile (h-10), normal on desktop (sm:h-16)
             />
           </div>
         </div>
       </div>
-      */}
 
-
-      {/* Logo Strip - Responsive for both desktop and mobile */}
-<div className="bg-white py-2">
-  <div className="container mx-auto px-4 flex items-center justify-between">
-    {/* AICTE Logo - Maintain aspect ratio */}
-    <div className="flex items-center">
-      <Image
-        src="/AICTE_Logo.png"
-        alt="AICTE Logo"
-        width={160}
-        height={80}
-        className="h-12 sm:h-16 w-auto" // Smaller on mobile (h-10), normal on desktop (sm:h-16)
-      />
-    </div>
-
-    {/* Conference Title - Responsive text sizing */}
-    <div className="text-center">
-      <h1 className="text-2xl sm:text-5xl font-bold text-[#004aad]">
-        {language === "ta" ? (
-          <span className="text-xl sm:text-4xl font-tamil">மெட்நெக்ஸ்ட் 2025</span>
-        ) : (
-          "MedNext 2025"
-        )}
-      </h1>
-    </div>
-
-    {/* SVCE Logo - Maintain aspect ratio */}
-    <div className="flex items-center">
-      <Image
-        src="/svce_logo.jpg"
-        alt="SVCE Logo"
-        width={200}
-        height={80}
-        className="h-12 sm:h-16 w-auto" // Smaller on mobile (h-10), normal on desktop (sm:h-16)
-      />
-    </div>
-  </div>
-</div>
-
-
-      
-
-      {/* Navigation 
+      {/* Navigation */}
       <nav
         className={`sticky top-0 z-50 bg-[#004aad] transition-all duration-300 ${
           scrollY > 100 ? "shadow-lg" : ""
@@ -811,6 +640,7 @@ useEffect(() => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
+            {/* Desktop Navigation */}
             <div className="hidden lg:flex space-x-8">
               {Object.entries(t.nav).map(([key, value]) => (
                 <button
@@ -823,7 +653,10 @@ useEffect(() => {
               ))}
             </div>
 
-            <div className="flex items-center space-x-4">
+            {/* Mobile buttons - moved to right side */}
+            <div className="flex items-center space-x-4 ml-auto">
+              {" "}
+              {/* Added ml-auto here */}
               <Button
                 onClick={toggleLanguage}
                 variant="outline"
@@ -833,7 +666,14 @@ useEffect(() => {
                 <Globe className="w-4 h-4 mr-2" />
                 {language === "en" ? "தமிழ்" : "English"}
               </Button>
-
+              {/* AICTE Grants Button (Desktop) */}
+              <Button
+                asChild
+                size="sm"
+                className="hidden md:inline-flex bg-[#ff914d] hover:bg-orange-600 text-white"
+              >
+                <a href="/aicte-grants">AICTE Grants</a>
+              </Button>
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="lg:hidden text-white"
@@ -847,7 +687,7 @@ useEffect(() => {
             </div>
           </div>
 
-          {/* Mobile Menu 
+          {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
               <div className="py-4 space-y-2">
@@ -863,73 +703,19 @@ useEffect(() => {
                   </button>
                 ))}
               </div>
+              {/* AICTE Grants Button (Mobile) */}
+              <div className="px-4 pt-2">
+                <Button
+                  asChild
+                  className="w-full bg-[#ff914d] hover:bg-orange-600 text-white"
+                >
+                  <a href="/aicte-grants">AICTE Grants</a>
+                </Button>
+              </div>
             </div>
           )}
         </div>
       </nav>
-
-      */}
-
-      {/* Navigation */}
-<nav className={`sticky top-0 z-50 bg-[#004aad] transition-all duration-300 ${scrollY > 100 ? "shadow-lg" : ""}`}>
-  <div className="container mx-auto px-4">
-    <div className="flex items-center justify-between h-16">
-      {/* Desktop Navigation - unchanged */}
-      <div className="hidden lg:flex space-x-8">
-        {Object.entries(t.nav).map(([key, value]) => (
-          <button
-            key={key}
-            onClick={() => scrollToSection(key === "home" ? "hero" : key)}
-            className="text-white hover:text-[#ff914d] transition-colors duration-200 font-medium"
-          >
-            {value}
-          </button>
-        ))}
-      </div>
-
-      {/* Mobile buttons - moved to right side */}
-      <div className="flex items-center space-x-4 ml-auto"> {/* Added ml-auto here */}
-        <Button
-          onClick={toggleLanguage}
-          variant="outline"
-          size="sm"
-          className="bg-white text-[#004aad] border-white hover:bg-[#ff914d] hover:text-white hover:border-[#ff914d]"
-        >
-          <Globe className="w-4 h-4 mr-2" />
-          {language === "en" ? "தமிழ்" : "English"}
-        </Button>
-
-        <button
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden text-white"
-        >
-          {mobileMenuOpen ? (
-            <X className="w-6 h-6" />
-          ) : (
-            <Menu className="w-6 h-6" />
-          )}
-        </button>
-      </div>
-    </div>
-
-    {/* Mobile Menu - unchanged */}
-    {mobileMenuOpen && (
-      <div className="lg:hidden bg-[#004aad] border-t border-blue-600">
-        <div className="py-4 space-y-2">
-          {Object.entries(t.nav).map(([key, value]) => (
-            <button
-              key={key}
-              onClick={() => scrollToSection(key === "home" ? "hero" : key)}
-              className="block w-full text-left px-4 py-2 text-white hover:bg-blue-600 transition-colors"
-            >
-              {value}
-            </button>
-          ))}
-        </div>
-      </div>
-    )}
-  </div>
-</nav>
 
       {/* Scrolling Announcement */}
       <div className="bg-[#ff914d] text-white py-2 overflow-hidden">
@@ -1302,7 +1088,7 @@ useEffect(() => {
           </h2>
 
           <div className="max-w-2xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
               <Badge
                 variant="secondary"
                 className="bg-green-100 text-green-800 p-4 text-lg"
@@ -1323,7 +1109,8 @@ useEffect(() => {
               </Badge>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            {/* Registration Buttons - Replaced with 4-button grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-center">
               <Button
                 asChild
                 size="lg"
@@ -1342,6 +1129,23 @@ useEffect(() => {
               <Button
                 asChild
                 size="lg"
+                className="bg-[#004aad] hover:bg-[#003882] text-white px-8 py-4 text-lg font-semibold rounded-full"
+              >
+                <a
+                  href="https://forms.gle/NX3AXAXR1nqzKV5G8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  {language === "ta"
+                    ? "கட்டுரை சமர்ப்பிப்பு"
+                    : "Paper Submission"}
+                </a>
+              </Button>
+
+              <Button
+                asChild
+                size="lg"
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold rounded-full"
               >
                 <a
@@ -1353,22 +1157,35 @@ useEffect(() => {
                   {t.registration.whatsapp}
                 </a>
               </Button>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center col-span-full">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-[#ff914d] hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full"
+                >
+                  <a href="/IEEE conference template - Tamil .doc">
+                    <FileDown className="w-5 h-5 mr-2" />
+                    {language === "ta"
+                      ? "டெம்ப்ளேட் பதிவிறக்கம் (தமிழ்)"
+                      : "Download Template (Tamil)"}
+                  </a>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-[#ff914d] hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full"
+                >
+                  <a href="IEEE Double Column English.doc">
+                    <FileDown className="w-5 h-5 mr-2" />
+                    {language === "ta"
+                      ? "டெம்ப்ளேட் பதிவிறக்கம் (ஆங்கிலம்)"
+                      : "Download Template (English)"}
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
-
-                    {/* Add this visitor counter box 
-          <div className="mt-12 flex justify-center">
-            <div className="bg-white p-4 rounded-lg shadow-md text-center border border-gray-200">
-              <div className="text-sm text-gray-600 mb-1">
-                Total Website Visitors
-              </div>
-              <div className="text-2xl font-bold text-[#004aad]">
-                {visitCount.toLocaleString()}
-              </div>
-            </div>
-          </div>
-*/}
-
         </div>
       </section>
 
@@ -1425,13 +1242,7 @@ useEffect(() => {
             </a>
           </div>
         </div>
-        {/*}
-        <div className="text-center text-xs mt-4">
-    Total visits: {visitCount}
-  </div>
-  */}
       </footer>
-      
     </div>
   );
 }
