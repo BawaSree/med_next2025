@@ -152,11 +152,11 @@ const content = {
       title: "Resource Persons",
       list: [
         {
-          name: "Dr. Ilankumaran Kaliamoorthy",
+          name: "Dr Arumugam S",
           designation:
-            "Chief Executive Officer, Consultant Liver Intensivist & Anaesthetist",
-          organization: "Apollo Hospitals, Chennai Region, Chennai. ",
-          image: "/Dr Ilankumaran kaliamoorthy.jpeg.jpg?height=200&width=200",
+            "Orthopedic Expertise",
+          organization: "Founder-Chennai Ortho, Founder & Member of Arthroplasty, Global Mentor & Speaker",
+          image: "/ArumugamS.jpg?height=200&width=200",
         },
         {
           name: "Mr.Sriram Bhakthan",
@@ -393,11 +393,11 @@ const content = {
       title: "முக்கிய அழைப்புப் பேச்சாளர்கள்",
       list: [
         {
-          name: "முனைவர் இளங்குமரன் கலியமூர்த்தி",
+          name: "டாக்டர் ஆறுமுகம் எஸ்",
           designation:
-            "தலைமை நிர்வாக அதிகாரி, கல்லீரல் தீவிர சிகிச்சை பிரிவு மற்றும் மயக்கவியல் நிபுணர்",
-          organization: "அப்பல்லோ மருத்துவமனைகள், சென்னை பிராந்தியம், சென்னை.",
-          image: "/Dr Ilankumaran kaliamoorthy.jpeg.jpg?height=200&width=200",
+            "எலும்பியல் நிபுணர்",
+          organization: "நிறுவனர்-சென்னை ஆர்த்தோ, ஆர்த்ரோபிளாஸ்டி நிறுவனர் & உறுப்பினர், உலகளாவிய வழிகாட்டி & பேச்சாளர்",
+          image: "/ArumugamS.jpg?height=200&width=200",
         },
         {
           name: "திரு. ஸ்ரீராம் பக்தன்",
