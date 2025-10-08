@@ -67,6 +67,7 @@ const content = {
         "Shaping the future of Healthcare with AI, Imaging, Devices & Diagnostics",
       dates: "9 & 10 October 2025",
       cta: "Register Now",
+      inv: "Invitation",
       scrolling:
         "No Registration Fee • Limited to 50 Participants • AICTE Sponsored Bilingual Conference under VAANI Scheme",
     },
@@ -303,6 +304,7 @@ const content = {
         "செயற்கை நுண்ணறிவு, உருவபதிப்பு, சாதனங்கள் மற்றும் நோயறிதல் மூலம் உடல்நலத்தின் எதிர்காலத்தை வடிவமைத்தல்",
       dates: "அக்டோபர் 9 மற்றும் 10ஆம் தேதி 2025",
       cta: "பதிவு செய்யுங்கள்",
+      inv: "அழைப்பிதழ்",
       scrolling:
         "பதிவு கட்டணம் இல்லை • 50 பேர் மட்டும் • AICTE நிதியுதவி மாநாடு",
     },
@@ -767,6 +769,8 @@ export default function MedNextConference() {
             <Calendar className="w-6 h-6" />
             <span>{t.hero.dates}</span>
           </div>
+          <section className="text-center py-10">
+  <div className="flex flex-col sm:flex-row justify-center gap-6">
           <Button
             onClick={() => scrollToSection("registration")}
             size="lg"
@@ -774,6 +778,39 @@ export default function MedNextConference() {
           >
             {t.hero.cta}
           </Button>
+          <Button
+            onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/Invitation.pdf"; // Path to your PDF in the public folder
+            link.download = "Invitation.pdf"; // Optional: name for downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            }}
+            size="lg"
+            className="bg-[#ff914d] hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            
+            {t.hero.inv}
+          </Button>
+          {/*}
+          <Button
+            onClick={() => {
+            const link = document.createElement("a");
+            link.href = "/Invitation.pdf"; // Path to your PDF in the public folder
+            link.download = "Invitation.pdf"; // Optional: name for downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            }}
+            size="lg"
+            className="bg-[#ff914d] hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            {t.hero.inv}
+          </Button>
+          */}
+           </div>
+         </section>
         </div>
       </section>
 
