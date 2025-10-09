@@ -799,7 +799,7 @@ export default function MedNextConference() {
           <Button
             onClick={() => {
             const link = document.createElement("a");
-            link.href = "/Final_proceedings_for_release.pdf"; // Path to your PDF in the public folder
+            link.href = "https://drive.google.com/uc?export=download&id=13A78HmSSiyFNVB59QGQyNByY9tFqZarj"; // Path to your PDF in the public folder
             link.download = "/Final_proceedings_for_release.pdf"; // Optional: name for downloaded file
             document.body.appendChild(link);
             link.click();
