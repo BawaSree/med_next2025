@@ -68,6 +68,7 @@ const content = {
       dates: "9 & 10 October 2025",
       cta: "Register Now",
       inv: "Invitation",
+      pro: "Proceedings",
       scrolling:
         "No Registration Fee • Limited to 50 Participants • AICTE Sponsored Bilingual Conference under VAANI Scheme",
     },
@@ -305,6 +306,7 @@ const content = {
       dates: "அக்டோபர் 9 மற்றும் 10ஆம் தேதி 2025",
       cta: "பதிவு செய்யுங்கள்",
       inv: "அழைப்பிதழ்",
+      pro: "நடவடிக்கைகள்",
       scrolling:
         "பதிவு கட்டணம் இல்லை • 50 பேர் மட்டும் • AICTE நிதியுதவி மாநாடு",
     },
@@ -793,12 +795,12 @@ export default function MedNextConference() {
             
             {t.hero.inv}
           </Button>
-          {/*}
+          
           <Button
             onClick={() => {
             const link = document.createElement("a");
-            link.href = "/Invitation.pdf"; // Path to your PDF in the public folder
-            link.download = "Invitation.pdf"; // Optional: name for downloaded file
+            link.href = "/Final_proceedings_for_release.pdf"; // Path to your PDF in the public folder
+            link.download = "/Final_proceedings_for_release.pdf"; // Optional: name for downloaded file
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -806,9 +808,9 @@ export default function MedNextConference() {
             size="lg"
             className="bg-[#ff914d] hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
-            {t.hero.inv}
+            {t.hero.pro}
           </Button>
-          */}
+          
            </div>
          </section>
         </div>
