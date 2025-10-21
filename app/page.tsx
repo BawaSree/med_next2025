@@ -1272,7 +1272,7 @@ export default function MedNextConference() {
           <div className="border-t border-blue-600 mt-8 pt-8 text-center">
             <p>{t.footer.copyright}</p>
             <a
-              href="https://github.com/BawadharaniSree"
+              href="https://www.linkedin.com/in/bawadharani-sree-ramakrishnan-97a638218?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0him4R7lSAeA8ZuNEp3NHQ%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black hover:underline"
